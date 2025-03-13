@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Html</title>
+    <meta name="description" content="A basic HTMML page with sementic struture">
+    <meta name="author" content="Sergio Varas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/pefil.jpg" alt="photo" width="100" height="100"> <span > Sergio Varas </span>
+    </header>    
+
+        <nav class="nav-menu">
+            <button class="hamburger">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h1>Home</h1>
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <p> </p>
+            <div id="courses-list"></div>
+        </section>
+        <section id="Buenos-Aires">
+            <h2>Buenos Aires, Argentina</h2>
+            <img src="images/images.jpeg" alt="Buenos-Aires" width="200">
+            <p>Buenos Aires</p>
+        </section>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="course-filters">
+                <button data-filter="all">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+            <div id="course-date">
+                <button data-date="110">110</button>
+                <button data-date="130">130</button>
+                <button data-date="111">111</button>
+                <button data-date="210">210</button>
+                <button data-date="131">131</button>
+                <button data-date="231">231</button>
+
+
+            </div>
+        </section>
+    
+    </main>  
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Sergio Varas | Argentina</p>
+        <p id="lastModified"></p>
+       
+    </footer>
+</body>
+</html>
