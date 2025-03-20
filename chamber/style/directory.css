@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+header {
+    background-color: #2E8B57;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover {
+    border: 1px solid #0e0d0d;
+    background-color: #34495e;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1, .hero p, .hero .cta {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero h1{
+    left: 50%;
+    top: 85%;
+}
+
+.hero .cta {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 60%;
+}
+
+.eventos, .recursos, .testimonios {
+    padding: 40px;
+    text-align: center;
+}
+
+.eventos-lista, .recursos-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evento, .recurso {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+}
+
+footer {
+    background-color: #2E8B57;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contacto, footer .redes {
+    margin-bottom: 10px;
+}
+
+footer .redes img {
+    margin: 0 10px;
+}
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    
+    
+  }
+  
+  #members-container.list-view {
+    display: block;
+    text-align: center;
+  }
+  
+  .member-card, .member-list-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .member-list-item {
+    max-width: 800px;
+    margin: 20px auto;
+  }

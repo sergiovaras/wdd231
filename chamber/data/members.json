@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Negocios Locales ABC",
+      "address": "Calle Principal 123",
+      "phone": "123-456-7890",
+      "website": "https://www.negociosabc.com",
+      "image": "negocios-abc.jpg",
+      "membership": 3,
+      "description": "Negocio local con servicios de alta calidad."
+    },
+    {
+      "name": "Restaurante Delicias",
+      "address": "Avenida Central 456",
+      "phone": "987-654-3210",
+      "website": "https://www.tripadvisor.com.ar",
+      "image": "restaurante-delicias.jpg",
+      "membership": 2,
+      "description": "El mejor restaurante de la ciudad."
+    },
+    {
+      "name": "Tienda de Ropa XYZ",
+      "address": "Calle Secundaria 789",
+      "phone": "111-222-3333",
+      "website": "https://www.tiendaropaxyz.com",
+      "image": "tienda-ropa-xyz.jpg",
+      "membership": 1,
+      "description": "Ropa de moda para todos los gustos."
+    },
+    {
+      "name": "Hotel Paraiso",
+      "address": "Avenida Costera 101",
+      "phone": "444-555-6666",
+      "website": "https://www.hotelparaiso.com",
+      "image": "hotel-paraiso.jpg",
+      "membership": 3,
+      "description": "Disfruta de una estancia inolvidable."
+    },
+    {
+      "name": "Cafeteria El Buen Cafe",
+      "address": "Calle del Sol 202",
+      "phone": "777-888-9999",
+      "website": "https://www.cafebuen.com",
+      "image": "cafeteria-buen.jpg",
+      "membership": 2,
+      "description": "El mejor café de la ciudad."
+    },
+      {
+      "name": "Servicios Profesionales JJ",
+      "address": "Avenida del Puerto 303",
+      "phone": "100-200-3000",
+      "website": "https://www.serviciosjj.com",
+      "image": "servicios-jj.jpg",
+      "membership": 1,
+      "description": "Servicios de alta calidad."
+    },
+      {
+      "name": "Ferreteria Los Amigos",
+      "address": "Calle de la Luna 404",
+      "phone": "400-500-6000",
+      "website": "https://www.ferreteriaamigos.com",
+      "image": "ferreteria-amigos.jpg",
+      "membership": 3,
+      "description": "Todo lo que necesitas para tu hogar."
+    }
+  ]
