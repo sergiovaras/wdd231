@@ -42,7 +42,7 @@ function displayMembers(members, view) {
             <td>${member.phone}</td>
             <td><a href="${member.website}">${member.website}</a></td>
         `;
-        listMembers.appendChild(tr); // Agregar fila a la tabla
+        listMembers.appendChild(tr); 
     });
 }
 
