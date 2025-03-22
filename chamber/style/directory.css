@@ -121,8 +121,8 @@ footer .redes img {
     left: 25%;
     padding: 10px;
 
-    border-collapse: separate; /* Importante para que border-spacing funcione */
-    border-spacing: 0 15px; /* Espacio horizontal 0, espacio vertical 15px */
+    border-collapse: separate; 
+    border-spacing: 0 15px; 
     border: 1px solid #f0f3eb;
     background-color: #a3d0ea;
 }
@@ -154,8 +154,8 @@ footer .redes img {
 #view-toggle button i,
 #view-toggle button span.material-icons,
 #view-toggle button img {
-    font-size: 2px; /* Ajusta el tamaño del icono */
-    vertical-align: middle; /* Centra verticalmente el icono */
+    font-size: 2px; 
+    vertical-align: middle;
     width: 50px;
     height: 50px;
 }
