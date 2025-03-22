@@ -1,30 +1,30 @@
 [
     {
-      "name": "Negocios Locales ABC",
+      "name": "Local Businesses ABC",
       "address": "Calle Principal 123",
       "phone": "123-456-7890",
       "website": "https://www.negociosabc.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/local.jpeg",
       "membership": 3,
-      "description": "Negocio local con servicios de alta calidad."
+      "description": "Local business with high quality services."
     },
     {
-      "name": "Restaurante Delicias",
+      "name": "Delicias Restaurant",
       "address": "Avenida Central 456",
       "phone": "987-654-3210",
       "website": "https://www.tripadvisor.com.ar",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/resta.png",
       "membership": 2,
-      "description": "El mejor restaurante de la ciudad."
+      "description": "The best restaurant in town."
     },
     {
-      "name": "Tienda de Ropa XYZ",
+      "name": "Fashion Clothing Store",
       "address": "Calle Secundaria 789",
       "phone": "111-222-3333",
       "website": "https://www.tiendaropaxyz.com",
-      "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/ropa.jpg",
+      "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/ropa1.jpg",
       "membership": 1,
-      "description": "Ropa de moda para todos los gustos."
+      "description": "Fashionable clothing for all tastes."
     },
     {
       "name": "Hotel Paraiso",
@@ -33,33 +33,33 @@
       "website": "https://www.hotelparaiso.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/hotel.png",
       "membership": 3,
-      "description": "Disfruta de una estancia inolvidable."
+      "description": "Enjoy an unforgettable stay."
     },
     {
-      "name": "Cafeteria El Buen Cafe",
+      "name": "Confectionery",
       "address": "Calle del Sol 202",
       "phone": "777-888-9999",
       "website": "https://www.cafebuen.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/cafe.jpeg",
       "membership": 2,
-      "description": "El mejor café de la ciudad."
+      "description": "The best desserts in town."
     },
       {
-      "name": "Servicios Profesionales JJ",
+      "name": "JJ Professional Services",
       "address": "Avenida del Puerto 303",
       "phone": "100-200-3000",
       "website": "https://www.serviciosjj.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/profe.png",
       "membership": 1,
-      "description": "Servicios de alta calidad."
+      "description": "high-quality services."
     },
       {
-      "name": "Ferreteria Los Amigos",
+      "name": "Los Amigos Hardware Store",
       "address": "Calle de la Luna 404",
       "phone": "400-500-6000",
       "website": "https://www.ferreteriaamigos.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/ferre.jpeg" ,
       "membership": 3,
-      "description": "Todo lo que necesitas para tu hogar."
+      "description": "Everything you need for your home."
     }
   ]
