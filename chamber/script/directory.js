@@ -5,8 +5,8 @@ const listMembers = document.getElementById('list-members');
 let members = [];
 async function fetchMembers() {
   const response = await fetch('data/members.json');
-  const members = await response.json();
-  return members;
+  return  await response.json();
+  
 }
 
 function displayMembers(members, view) {
@@ -48,8 +48,12 @@ function displayMembers(members, view) {
 
 
 async function init() {
-  members = await fetchMembers();
-  displayMembers(members, 'grid');
+  try {
+    members = await fetchMembers();
+    displayMembers(members, 'grid');
+  } catch (error) {
+    console.error("Error al inicializar los miembros:", error);
+  }
 }
 
 init();
