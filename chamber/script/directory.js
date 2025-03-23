@@ -2,7 +2,7 @@ const membersContainer = document.getElementById('members-container');
 const gridViewButton = document.getElementById('grid-view');
 const listViewButton = document.getElementById('list-view');
 const listMembers = document.getElementById('list-members');
-let members = [];
+
 async function fetchMembers() {
   const response = await fetch('data/members.json');
   const members = await response.json();
