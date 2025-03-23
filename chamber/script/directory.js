@@ -2,7 +2,7 @@ const membersContainer = document.getElementById('members-container');
 const gridViewButton = document.getElementById('grid-view');
 const listViewButton = document.getElementById('list-view');
 const listMembers = document.getElementById('list-members');
-
+let members = [];
 async function fetchMembers() {
   const response = await fetch('data/members.json');
   const members = await response.json();
@@ -49,19 +49,19 @@ function displayMembers(members, view) {
 
 async function init() {
   const members = await fetchMembers();
-  displayMembers(member, 'grid');
+  displayMembers(members, 'grid');
 }
 
 init();
 
 gridViewButton.addEventListener('click', () => {
   membersContainer.classList.remove('list-view');
-  displayMembers(member, 'grid');
+  displayMembers(members, 'grid');
 });
 
 listViewButton.addEventListener('click', () => {
   membersContainer.classList.add('list-view');
-  displayMembers(member, 'list');
+  displayMembers(members, 'list');
 });
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
