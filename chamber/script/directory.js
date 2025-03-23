@@ -61,7 +61,7 @@ gridViewButton.addEventListener('click', () => {
 
 listViewButton.addEventListener('click', () => {
   membersContainer.classList.add('list-view');
-  displayMembers(members, 'list');
+  displayMembers(member, 'list');
 });
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
