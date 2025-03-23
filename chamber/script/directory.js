@@ -9,7 +9,7 @@ async function fetchMembers() {
   return members;
 }
 
-function displayMembers(member, view) {
+function displayMembers(members, view) {
   membersContainer.innerHTML = '';
   listMembers.innerHTML = '';
   members.forEach(member => {
@@ -49,19 +49,19 @@ function displayMembers(member, view) {
 
 async function init() {
   const members = await fetchMembers();
-  displayMembers(member, 'grid');
+  displayMembers(members, 'grid');
 }
 
 init();
 
 gridViewButton.addEventListener('click', () => {
   membersContainer.classList.remove('list-view');
-  displayMembers(member, 'grid');
+  displayMembers(members, 'grid');
 });
 
 listViewButton.addEventListener('click', () => {
   membersContainer.classList.add('list-view');
-  displayMembers(member, 'list');
+  displayMembers(members, 'list');
 });
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
