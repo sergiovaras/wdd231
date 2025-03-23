@@ -49,14 +49,14 @@ function displayMembers(members, view) {
 
 async function init() {
   const members = await fetchMembers();
-  displayMembers(members, 'grid');
+  displayMembers(member, 'grid');
 }
 
 init();
 
 gridViewButton.addEventListener('click', () => {
   membersContainer.classList.remove('list-view');
-  displayMembers(members, 'grid');
+  displayMembers(member, 'grid');
 });
 
 listViewButton.addEventListener('click', () => {
