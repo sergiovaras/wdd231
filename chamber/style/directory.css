@@ -1,10 +1,20 @@
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x:hidden;
     background-color: #F5F5F5;
     color: #333;
+    box-sizing: border-box;
 }
+.contenedor-principal {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
 
 header {
     background-color: #2E8B57;
@@ -34,6 +44,7 @@ nav a:hover {
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero h1, .hero p, .hero .cta {
@@ -92,7 +103,7 @@ footer .redes img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
     
     
@@ -114,26 +125,26 @@ footer .redes img {
   
   
   
-  #list-members  {
-    width:50% ;
-    position:relative;
-    top: 90%;
-    left: 25%;
-    padding: 10px;
+  #list-members table {
+    width: 100%;
+    border-collapse: collapse;
+    border:  1px solid #ddd;
+   
 
-    border-collapse: separate; 
-    border-spacing: 0 15px; 
-    border: 1px solid #f0f3eb;
-    background-color: #a3d0ea;
-}
+  }
+    
 
 #list-members th, #list-members td {
     padding: 10px ;
     text-align: left;
-    border-bottom: 1px solid #ecf0f2;
-    background-color: #dee4e8;
-    width: 0%;
-  
+    border-bottom: 1px solid #ddd;
+    
+}
+#list-members th{
+    background-color: #67ab6f;
+}
+#list-members td {
+    background-color: #beece5;
 }
 .redes img {
     width: 25px;
@@ -147,17 +158,20 @@ footer .redes img {
 
 }
 .grid-view img{
-    width: 80px;
-    height: 80px;
+    max-width: 100%;
+    height: auto;
 
 }
 #view-toggle button i,
-#view-toggle button span.material-icons,
-#view-toggle button img {
+#view-toggle button span.material-icons{
     font-size: 2px; 
     vertical-align: middle;
     width: 50px;
     height: 50px;
+}
+#view-toggle button img {
+    width: 30px;
+    height: auto;
 }
 
 #view-toggle button {
