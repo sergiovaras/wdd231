@@ -19,19 +19,33 @@ html, body {
 header {
     background-color: #2E8B57;
     color: #FFF;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 100px;
 }
+.logo p{
+    position: relative;
+    left: 45%;
+    top: 90px;
+}
+.logo{
+    position: relative;
+    top: -20px;
+
+}
+
 
 nav a {
     color: #FFF;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 40px;
+    position: relative;
+    left: -40%;
 }
 nav a:hover {
-    border: 1px solid #0e0d0d;
+    border: 1px solid #e7e3e3;
     background-color: #34495e;
 }
 
@@ -43,7 +57,7 @@ nav a:hover {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 0 auto;
     display: block;
 }
 
@@ -67,7 +81,7 @@ nav a:hover {
     top: 60%;
 }
 
-.events, .resources, .testimonies {
+.events, .resources{
     padding: 40px;
     text-align: center;
 }
@@ -129,8 +143,8 @@ footer .redes img {
     width: 100%;
     border-collapse: collapse;
     border:  1px solid #ddd;
-   
-
+  
+  
   }
     
 
@@ -153,8 +167,8 @@ footer .redes img {
 .business h2{
   
     position:relative;
-    top: 90%;
-    left: 40%;
+    top: 180px;
+    left: 30%;
 
 }
 .grid-view img{
@@ -180,4 +194,115 @@ footer .redes img {
     padding: 10px 20px;
     cursor: pointer;
 }
+.testimony {
+    margin: 20px;
+    max-width: 300px; /* Limita el ancho del testimonio */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; /* Espacio entre líneas */
+    flex-basis: 300px; /* Ajusta el ancho inicial según sea necesario */
+    border: 1px solid #ddd;
+}
+.testimonies h2{
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    left:2%;
+  
 
+}  
+.testimony p:first-child {
+    font-style: italic; /* Estilo para la cita */
+    margin-bottom: 10px;
+}
+
+.testimony p:last-child {
+    font-weight: bold; /* Estilo para el autor */
+}
+.testimony {
+    /* ... estilos anteriores ... */
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimony:hover {
+    transform: translateY(5px); /* Elevar el testimonio al pasar el ratón */
+}
+.testimony {
+    /* ... estilos anteriores ... */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreado */
+    border-radius: 8px; /* Bordes redondeados */
+}
+.testimonies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    text-align: center;
+    
+}
+#weather-card {
+    background: linear-gradient(to bottom, #e1f5fe, #b3e5fc);
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: #333; /* Color del texto */
+    width: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+#weather-card h2 {
+    color: #0d47a1; /* Color del título */
+    position: relative;
+    left: 40%;
+    top: -100px;
+    
+}
+
+#temperature {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1565c0; /* Color de la temperatura */
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+}
+
+#description {
+    font-style: italic;
+    color: #555;
+}
+.featured-card {
+    border: 1px solid #bdb9b9;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 20%;
+    background-color: #f9f9f9;
+}
+#featured-members  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    
+  }
+ .membership h2{
+    display: block;
+    text-align: center;
+    
+}
+.cards{
+    margin: 80px;
+    color: #2E8B57;
+}
+  
+    
+    

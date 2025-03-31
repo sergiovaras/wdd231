@@ -21,91 +21,69 @@
 <body>
     <header>
         <div class="logo">
+            <p>Magdalena Chamber of Commerce</p>
             <img src="image/logo.png" alt="Chamber of Commerce logo" width="100" height="100">
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="">Directory </a>
+            <a href="https://sergiovaras.github.io/wdd231/chamber/directory.html">Directory </a>
             <a href="">Discover </a>
             <a href="">Join </a>
             
         </nav>
     </header>
     <main>
-        <div class="main-container">
-            <section class="hero">
-               <img src="image/Magdalena1.webp" alt="Featured image of Magdalena">
-               <h1>Welcome Magdalena Chamber of Commerce </h1>
-               <p>Magdalena Chamber of Commerce: We promote the growth of local businesses.Find events, a member directory, and resources for entrepreneurs..</p>
-               <a href="unete.html" class="cta">Join us</a>
-            </section>
-            <section class="events">
-                <h2>Featured events</h2>
-                <div class="events-list">
-                    <div class="event">
-                       <img src="image/digital.webp" alt="Evento 1">
-                       <h3>Taller de Marketing Digital</h3>
-                       <p>Fecha: 15 de noviembre</p>
-                       <a href="eventos.html#evento1">More information</a>
-                    </div>
-                    <div class="event">
-                       <img src="image/business.webp" alt="Evento 2">
-                       <h3>Networking Empresarial</h3>
-                       <p>Fecha: 22 de noviembre</p>
-                       <a href="eventos.html#evento2">More information</a>
-                    </div>
-                </div>
-            </section>
-            <section class="resources">
-                <h2>Business Resources</h2>
-                <div class="resources-list">
-                    <div class="resource">
-                       <img src="image/negocio.webp" alt="Icono 1">
-                       <h3>Business Startup Guide</h3>
-                       <a href="recursos.html#guia">download it</a>
-                    </div>
-                    <div class="resource">
-                       <img src="image/legal.webp" alt="Icono 2" width="200" height="200">
-                       <h3>Legal advice</h3>
-                       <a href="recursos.html#asesoramiento">Contact</a>
-                    </div>
-                </div>
-            </section>
+        <section class="hero">
+            <img src="image/Magdalena1.webp" alt="Featured image of Magdalena">
+            <h1>Welcome Magdalena Chamber of Commerce </h1>
+            <p>Magdalena Chamber of Commerce: We promote the growth of local businesses.Find events, a member directory, and resources for entrepreneurs..</p>
+         </section>
+         <section class="resources">
+            </div>
             <section class="testimonies">
-                <h2>testimonies</h2>
-                <div class="testimonio">
+                <h2>Testimonies</h2>
+                <div class="testimony">
+                <img src="image/test1.webp" width="150" alt="testimony1">
                    <p>"The Chamber of Commerce helped me connect with other entrepreneurs and grow my business.""</p>
                    <p>- Maria, boutique owner</p>
                 </div>
-            </section>
-            <div id="view-toggle">
-                <button id="grid-view">
-                    <img src="image/r_grid_menu_icon_214162.png" alt="Icono de cuadrícula">
-                </button>
-                <button id="list-view">
-                    <img src="image/list-symbol-of-three-items-with-dots_icon-icons.com_72994.png" alt="Icono de lista">
-                </button>
-            </div>
+                <div class="testimony">
+                    <img src="image/comerciante.webp" width="200" alt="testimony2">
+                    <p>Training has given us a competitive advantage. We're always finding new approaches and solutions to adapt to market trends and demands.</p>
+                    <p>-Roberto Torres</p>
+                </div>
+         </section>
+
+         <div id="view-toggle">
+             <button id="grid-view">
+                 <img src="image/r_grid_menu_icon_214162.png" alt="Icono de cuadrícula">
+             </button>
+             <button id="list-view">
+                 <img src="image/list-symbol-of-three-items-with-dots_icon-icons.com_72994.png" alt="Icono de lista">
+             </button>
+         </div>
+         <section class="directory">
+            <h2>Member Directory</h2>
             <div id="members-container" class="grid-view">
             </div>
-            <section class="business">
-               <h2>Business Directory</h2>
-               <div id="list-members">
-                   <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Phone</th>
-                                <th>web site</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </div>        
+         </section>    
+         <section class="business">
+            <h2>Business Directory</h2>
+            <div id="list-members">
+                <table>
+                     <thead>
+                         <tr>
+                             <th>Name</th>
+                             <th>Address</th>
+                             <th>Phone</th>
+                             <th>web site</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                     </tbody>
+                 </table>
+             </div>
+        </section>           
     </main>
     <footer>
         <div class="redes">
@@ -116,6 +94,7 @@
         <div class="development">
             <p>Sergio Varas, WDD 231</p>
             <p> <span id="lastModified"></span></p>
+            <p>Current Time:<span id="current time"></span></p>
         </div>
         
         

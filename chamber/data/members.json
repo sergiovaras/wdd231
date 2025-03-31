@@ -6,7 +6,8 @@
       "website": "https://www.negociosabc.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/local.jpeg",
       "membership": 3,
-      "description": "Local business with high quality services."
+      "description": "Local business with high quality services.",
+      "membershipLevel": "Plata"
     },
     {
       "name": "Delicias Restaurant",
@@ -33,7 +34,8 @@
       "website": "https://www.hotelparaiso.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/hotel.png",
       "membership": 3,
-      "description": "Enjoy an unforgettable stay."
+      "description": "Enjoy an unforgettable stay.",
+      "membershipLevel": "Oro"
     },
     {
       "name": "Confectionery",
@@ -51,7 +53,8 @@
       "website": "https://www.serviciosjj.com",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/main/chamber/image/profe.png",
       "membership": 1,
-      "description": "high-quality services."
+      "description": "high-quality services.",
+      "membershipLevel": "Oro"
     },
       {
       "name": "Los Amigos Hardware Store",

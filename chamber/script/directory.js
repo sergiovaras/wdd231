@@ -17,7 +17,7 @@ function displayMembers(members, view) {
       const card = document.createElement('div');
       card.classList.add('member-card');
       card.innerHTML = `
-        <h2>${member.name}</h2>
+        <h3>${member.name}</h3>
         <img src="${member.image}" alt="${member.name}">
         <p>${member.address}</p>
         <p>${member.phone}</p>
@@ -28,7 +28,7 @@ function displayMembers(members, view) {
       const listItem = document.createElement('div');
       listItem.classList.add('member-list-item');
       listItem.innerHTML = `
-        <h2>${member.name}</h2>
+        <h3>${member.name}</h3>
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <a href="${member.website}">Sitio web</a>
@@ -66,3 +66,12 @@ listViewButton.addEventListener('click', async () => {
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
+function mostrarHora() {
+  const ahora = new Date();
+  const hora = ahora.toLocaleTimeString();
+  document.getElementById('current time').textContent = hora;
+}
+
+setInterval(mostrarHora, 1000); // Actualiza cada segundo
+mostrarHora(); // Muestra la hora inicial
+
