@@ -26,6 +26,7 @@ header {
     max-height: 100px;
 }
 .logo p{
+    margin-left: 10px;
     position: relative;
     left: 45%;
     top: 90px;
@@ -40,7 +41,7 @@ header {
 nav a {
     color: #FFF;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 20px;
     position: relative;
     left: -40%;
 }
@@ -57,7 +58,7 @@ nav a:hover {
 
 .hero img {
     width: 100%;
-    height: 0 auto;
+    height:  auto;
     display: block;
 }
 
@@ -71,7 +72,10 @@ nav a:hover {
     left: 50%;
     top: 85%;
 }
-
+.directory h2{
+    position: relative;
+    left: 550px;
+}
 .hero .cta {
     background-color: #FFD700;
     color: #333;
@@ -155,10 +159,10 @@ footer .redes img {
     
 }
 #list-members th{
-    background-color: #67ab6f;
+    background-color: #fbfbfb;
 }
 #list-members td {
-    background-color: #beece5;
+    background-color: #a8e1d8;
 }
 .redes img {
     width: 25px;
@@ -167,9 +171,12 @@ footer .redes img {
 .business h2{
   
     position:relative;
-    top: 180px;
-    left: 30%;
-
+    top: 10px;
+    left: 25%;
+}
+.business{
+    position: relative;
+    left: 200px;
 }
 .grid-view img{
     max-width: 100%;
