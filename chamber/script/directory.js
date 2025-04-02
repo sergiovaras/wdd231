@@ -21,7 +21,7 @@ function displayMembers(members, view) {
         <img src="${member.image}" alt="${member.name}">
         <p>${member.address}</p>
         <p>${member.phone}</p>
-        <a href="${member.website}">Website</a>
+        <a href="${member.website}"></a>
       `;
       membersContainer.appendChild(card);
     } else {
@@ -31,7 +31,7 @@ function displayMembers(members, view) {
         <h3>${member.name}</h3>
         <p>${member.address}</p>
         <p>${member.phone}</p>
-        <a href="${member.website}">Website</a>
+        <a href="${member.website}"></a>
       `;
       membersContainer.appendChild(listItem);
     }
