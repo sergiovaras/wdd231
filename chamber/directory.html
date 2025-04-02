@@ -14,27 +14,33 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/style/Magdalena%201.JPG">
     <meta property="og:url" content="https://sergiovaras.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="style/directory.css">
+    <link rel="stylesheet" href="style/normalize.css">
     <script src="script/directory.js" defer></script>
-    
+    <script src="script/menu.js" defer></script>
+    <link rel="preload" as="image" href="image/logo.png">
     
 </head>
 <body>
     <header>
         <div class="logo">
-            <p>Magdalena Chamber of Commerce</p>
+            <p>Chamber of Commerce</p>
             <img src="image/logo.png" alt="Chamber of Commerce logo" width="100" height="100">
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="https://sergiovaras.github.io/wdd231/chamber/directory.html">Directory </a>
-            <a href="">Discover </a>
-            <a href="">Join </a>
-            
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="directory.html">Directory </a></li>
+                <li><a href="">Discover </a></li>
+                <li><a href="join.html">Join </a></li>
+            </ul> 
         </nav>
+        <div class="hamburger-menu">
+            <button>Menu</button>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <img src="image/Magdalena1.webp" alt="Featured image of Magdalena">
+            <img src="image/Magdalena1.webp" width="50" height="50" alt="Featured image of Magdalena">
             <h1>Welcome Magdalena Chamber of Commerce </h1>
             <p>Magdalena Chamber of Commerce: We promote the growth of local businesses.Find events, a member directory, and resources for entrepreneurs..</p>
          </section>
@@ -46,7 +52,7 @@
                    <p>- Maria, boutique owner</p>
                 </div>
                 <div class="testimony">
-                    <img src="image/comerciante.webp" width="200" alt="testimony2">
+                    <img src="image/comerciante.webp" width="180" alt="testimony2">
                     <p>Training has given us a competitive advantage. We're always finding new approaches and solutions to adapt to market trends and demands.</p>
                     <p>-Roberto Torres</p>
                 </div>

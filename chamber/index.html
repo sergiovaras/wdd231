@@ -13,26 +13,33 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/style/Magdalena%201.JPG">
     <meta property="og:url" content="https://sergiovaras.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="style/directory.css">
+    <link rel="stylesheet" href="style/normalize.css">
     <script src="script/index.js" defer></script>
+    <script src="script/menu.js" defer></script>
+    <link rel="preload" as="image" href="image/logo.png">
     
 </head>
 <body>
     <header>
         <div class="logo">
-            <p>Magdalena Chamber of Commerce</p>
+            <p>Chamber of Commerce</p>
             <img src="image/logo.png" alt="Chamber of Commerce logo" width="100" height="100">
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="https://sergiovaras.github.io/wdd231/chamber/directory.html">Directory </a>
-            <a href="">Discover </a>
-            <a href="">Join </a>
-            
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="directory.html">Directory </a></li>
+                <li><a href="">Discover </a></li>
+                <li><a href="join.html">Join </a></li>
+            </ul> 
         </nav>
+        <div class="hamburger-menu">
+            <button>Menu</button>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <img src="image/comunidad.webp" alt="Featured image of Magdalena" >
+            <img src="image/comunidad.webp" width="50" height="50" alt="Featured image of Magdalena" >
             <h1>Welcome Magdalena Chamber of Commerce </h1>
             <p>Magdalena Chamber of Commerce: We promote the growth of local businesses.Find events, a member directory, and resources for entrepreneurs..</p>
             <a href="unete.html" class="cta">Join us</a>
@@ -41,7 +48,7 @@
             <h2>Featured events</h2>
             <div class="events-list">
                 <div class="event">
-                   <img src="image/education.webp" width="300" alt="Evento 1">
+                   <img src="image/education.webp" width="200"  alt="Evento 1">
                    <h3> Marketing Digital course</h3>
                    <p>Date: November 15th</p>
                    <a href="https://www.educacionit.com/cursos-de-marketing-digital">More information</a>
@@ -53,8 +60,8 @@
                    <a href="https://icbargentina.com/capacitacion/especializacion-en-finanzas-inversiones-y-startups">More information</a>
                 </div>
                 <div class="event">
-                    <img src="image/education.webp" width="300" alt="Evento 3">
-                    <h3>Introduction to Cybersecurity course</h3>
+                    <img src="image/education.webp" width="200"   alt="Evento 3">
+                    <h3>Introduction to Cybersecurity</h3>
                     <p>Date:April 23</p>
                     <a href="https://www.educacionit.com/curso-de-introduccion-a-la-seguridad-informatica">More information</a>
                 </div>

@@ -14,12 +14,17 @@ html, body {
     padding: 0 20px; 
     box-sizing: border-box;
 }
+a{
+    color: #00008b;
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 header {
-    background-color: #2E8B57;
+    background-color: #333;
     color: #FFF;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,13 +46,12 @@ header {
 nav a {
     color: #FFF;
     text-decoration: none;
-    margin-left: 20px;
-    position: relative;
-    left: -40%;
+   
+   
 }
 nav a:hover {
     border: 1px solid #e7e3e3;
-    background-color: #34495e;
+    background-color:#333;
 }
 
 .hero {
@@ -159,10 +163,10 @@ footer .redes img {
     
 }
 #list-members th{
-    background-color: #fbfbfb;
+    background-color: #fffbfb;
 }
 #list-members td {
-    background-color: #a8e1d8;
+    background-color: #dbd0f7;
 }
 .redes img {
     width: 25px;
@@ -172,24 +176,23 @@ footer .redes img {
   
     position:relative;
     top: 10px;
-    left: 25%;
+    left: 40%;
 }
-.business{
-    position: relative;
-    left: 200px;
-}
+
 .grid-view img{
     max-width: 100%;
     height: auto;
-
 }
+
 #view-toggle button i,
 #view-toggle button span.material-icons{
     font-size: 2px; 
     vertical-align: middle;
     width: 50px;
     height: 50px;
+    
 }
+
 #view-toggle button img {
     width: 30px;
     height: auto;
@@ -200,6 +203,7 @@ footer .redes img {
     border: 1px solid #ddd;
     padding: 10px 20px;
     cursor: pointer;
+  
 }
 .testimony {
     margin: 20px;
@@ -308,8 +312,174 @@ footer .redes img {
 }
 .cards{
     margin: 80px;
-    color: #2E8B57;
+    color: #9da19f;
 }
-  
+/* Styles for the hamburger menu */
+.hamburger-menu button {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    display: block;
+}
+
+.hamburger-menu button::before {
+    content: '☰'; /* Hamburger icon */
+}
+
+.hamburger-menu button.active::before {
+    content: '✖'; /* Cross icon */
+}
+
+/* Default state of the menu (hidden in mobile) */
+nav.main-nav {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+
+/* Visible state of the menu when open */
+nav.main-nav.open {
+    display: block;
+    opacity: 10;
+    max-height: 500px; 
+}
+
+nav.main-nav ul {
+    display: flex;
+    flex-direction:column;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.main-nav ul li {
+    padding: 4px 0;
+}
+@media (min-width: 768px) {
+    header .main-nav ul {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    header .main-nav ul li {
+        margin: 0 15px;
+    }
+}
+.join-us {
+    grid-template-columns: 2fr 1fr; 
+    align-items: flex-start;
+}
+.join-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.form-container {
+    flex: 2;
+    padding: 1rem;
+}
+
+.form-container form {
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.membership-benefits {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #aaa7a7;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.redes img {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del encabezado */
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hamburger-menu button {
+        display: block;
+    }
+
+    .join-us {
+        flex-direction: column;
+    }
+}     
     
     
