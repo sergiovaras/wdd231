@@ -1,4 +1,4 @@
-html, body {
+    * {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,12 +9,7 @@ html, body {
     color: #333;
     box-sizing: border-box;
 }
-.main-container {
-    max-width: 1024px; 
-    margin: 0 auto;
-    padding: 0 20px; 
-    box-sizing: border-box;
-}
+
 a{
     color: #00008b;
     font-weight: bold;
