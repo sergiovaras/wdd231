@@ -19,10 +19,6 @@ a:hover {
     border-bottom: 2px solid #FFA500; /* Añade una línea inferior */
 }
 
-a:focus {
-    outline: 2px dotted #00008B; /* Enfoque claramente visible */
-    color: #00008B; /* Azul intenso */
-}
 
 
 header {
