@@ -2,11 +2,12 @@ const membersContainer = document.getElementById('members-container');
 const gridViewButton = document.getElementById('grid-view');
 const listViewButton = document.getElementById('list-view');
 const listMembers = document.getElementById('list-members');
+let members=[];
 
 async function fetchMembers() {
   const response = await fetch('data/members.json');
-  const members = await response.json();
-  return members;
+  const data = await response.json();
+  members = data;
 }
 
 function displayMembers(members, view) {
@@ -29,6 +30,7 @@ function displayMembers(members, view) {
       listItem.classList.add('member-list-item');
       listItem.innerHTML = `
         <h3>${member.name}</h3>
+        <img src="${member.image}" alt="${member.name}">
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <a href="${member.website}"></a>
@@ -47,22 +49,25 @@ function displayMembers(members, view) {
 }
 
 
-async function init() {
-  const members = await fetchMembers();
-  displayMembers(members, 'grid');
-}
 
-init();
+async function init() {
+await fetchMembers();
+displayMembers(members, 'grid');
+
+
+
 
 gridViewButton.addEventListener('click', async () => {
-    membersContainer.classList.remove('list-view');
-    await displayMembers(members, 'grid');
+membersContainer.classList.remove('list-view');
+displayMembers(members, 'grid');
 });
 
 listViewButton.addEventListener('click', async () => {
-    membersContainer.classList.add('list-view');
-    await displayMembers(members, 'list');
+  membersContainer.classList.add('list-view');
+  displayMembers(members, 'list');
 });
+}
+init();
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
