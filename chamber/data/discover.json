@@ -1,51 +1,51 @@
 {
     "items": [
     {
-      "name": "La Iglesia Parroquial Santa María Magdalena:",
+      "name": "The Parish Church of Saint Mary Magdalene:",
       "address": "Magdalena,Buenos Aires",
-      "description": " Un importante punto de referencia arquitectónico y religioso de la ciudad.",
+      "description": "An important architectural and religious landmark of the city.",
       "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/iglesia.webp"
     },
     {
-        "name": "El Museo Histórico Municipal de Magdalena",
+        "name": "The Municipal Historical Museum of Magdalena",
         "address": "Magdalena,Buenos Aires",
-        "description": " Un lugar para aprender sobre la historia local, sus personajes y eventos importantes.",
+        "description": "A place to learn about local history, its people, and important events.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/museo.webp"
       },
       {
-        "name": "Las barrancas del Río de la Plata",
+        "name": "The ravines of the Río de la Plata",
         "address": "Magdalena,Buenos Aires",
-        "description": "La geografía particular de la zona, con sus elevaciones y vistas al río.",
+        "description": "The particular geography of the area, with its elevations and views of the river.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/rio2.webp"
       },
       {
-        "name": "La producción agrícola y ganadera",
+        "name": "Agricultural and livestock production",
         "address": "Magdalena,Buenos Aires",
-        "description": "La actividad económica principal de la región, con sus campos y tradiciones rurales.",
+        "description": "The main economic activity of the region, with its fields and rural traditions.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/ganaderia.webp"
       },
       {
-        "name": "Eventos culturales y festividades locales",
+        "name": "Cultural events and local festivals",
         "address": "Magdalena,Buenos Aires",
-        "description": "Como fiestas patronales, festivales folklóricos o eventos relacionados con la producción.",
+        "description": "Such as patron saint festivals, folk festivals or production-related events.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/WA-folklorico.webp"
       },
       {
-        "name": "Figuras históricas o personajes destacados nacidos o vinculados a Magdalena",
+        "name": "Historical figures or prominent figures born or linked to Magdalena",
         "address": "Magdalena,Buenos Aires",
-        "description": "AIndividuos que hayan dejado una marca en la historia local o nacional.",
+        "description": "Individuals who have left a mark on local or national history.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/personaje.webp"
       },
       {
-        "name": "Espacios naturales cercanos: ",
+        "name": "Nearby natural spaces",
         "address": "Magdalena,Buenos Aires",
-        "description": "Si hay parques, reservas naturales o áreas de recreación al aire libre en los alrededores de Magdalena.",
-        "image": "https://github.com/sergiovaras/wdd231/blob/main/chamber/image/reserva.webp"
+        "description": "If there are parks, nature reserves, or outdoor recreation areas in the Magdalena area.",
+        "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/reserva2.webp"
       },
       {
-        "name": "El casco histórico de Magdalena: ",
+        "name": "The historic center of Magdalena:",
         "address": "Magdalena,Buenos Aires",
-        "description": "Con su arquitectura colonial y edificios antiguos que cuentan la historia del pueblo.",
+        "description": "With its colonial architecture and old buildings that tell the story of the town.",
         "image": "https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/chamber/image/magda1.webp"
       }
     ]

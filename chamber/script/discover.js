@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const gridContainer = document.querySelector(".grid-container");
     
-    // Limpiar el contenedor completamente al inicio
+    
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
     
-    // Añadir placeholder de carga
+    
     const placeholder = document.createElement('div');
     placeholder.classList.add('grid-placeholder');
     placeholder.textContent = 'Loading content...';
@@ -19,29 +19,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             return response.json();
         })
-        .then(data => {
-            // Eliminar placeholder
+        .then(data => { 
             gridContainer.innerHTML = '';
-            
-            // Verificar que data.items existe y es un array
             if (!Array.isArray(data.items)) {
                 throw new Error('Invalid data format: expected items array');
             }
 
-            // Fragmento de documento para mejor performance
             const fragment = document.createDocumentFragment();
             
             data.items.forEach(item => {
                 // Validar datos básicos del item
                 if (!item.name || !item.image) {
                     console.warn('Invalid item data:', item);
-                    return; // Saltar este item
+                    return; 
                 }
 
                 const card = document.createElement("article");
                 card.classList.add("grid-item");
                 
-                // Cabecera
+                // Title
                 const h2 = document.createElement('h2');
                 h2.textContent = item.name || 'Unnamed location';
                 
@@ -73,10 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const button = document.createElement('button');
                 button.setAttribute('aria-label', `Learn more about ${item.name}`);
                 const a = document.createElement('a');
-                a.href = item.link || "https://www.turismoasturias.es/en/";
+                a.href = item.link || "https://turismomagdalena.gob.ar/";
                 a.target = "_blank";
                 a.rel = "noopener noreferrer";
-                a.textContent = "Places of Asturias";
+                a.textContent = "learn more";
                 button.appendChild(a);
                 
                 // Ensamblar tarjeta
@@ -99,12 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
             gridContainer.appendChild(errorMsg);
         });
 
-    // Visitor Message Logic (mejorado)
+    // Visitor Message 
     const visitorMessage = document.getElementById("visitor-message");
-    if (visitorMessage) {  // Verificar que el elemento existe
+    if (visitorMessage) {  
         const lastVisit = localStorage.getItem("lastVisit");
         const currentDate = Date.now();
-        const oneDay = 24 * 60 * 60 * 1000; // milisegundos en un día
+        const oneDay = 24 * 60 * 60 * 1000; 
 
         if (!lastVisit) {
             visitorMessage.textContent = "Welcome! Let us know if you have any questions.";

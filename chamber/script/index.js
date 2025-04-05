@@ -191,7 +191,7 @@ document.getElementById('lastModified').textContent = lastModified;
 function mostrarHora() {
   const ahora = new Date();
   const hora = ahora.toLocaleTimeString();
-  document.getElementById('current time').textContent = hora;
+  document.getElementById('current_time').textContent = hora;
 }
 
 setInterval(mostrarHora, 1000); // Updates every second
