@@ -1,0 +1,52 @@
+{
+    "items": [
+    {
+      "name": "La Iglesia Parroquial Santa María Magdalena:",
+      "address": "Magdalena,Buenos Aires",
+      "description": " Un importante punto de referencia arquitectónico y religioso de la ciudad.",
+      "image": ""
+    },
+    {
+        "name": "El Museo Histórico Municipal de Magdalena",
+        "address": "Magdalena,Buenos Aires",
+        "description": " Un lugar para aprender sobre la historia local, sus personajes y eventos importantes.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "Las barrancas del Río de la Plata",
+        "address": "Magdalena,Buenos Aires",
+        "description": "La geografía particular de la zona, con sus elevaciones y vistas al río.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "La producción agrícola y ganadera",
+        "address": "Magdalena,Buenos Aires",
+        "description": "La actividad económica principal de la región, con sus campos y tradiciones rurales.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "Eventos culturales y festividades locales",
+        "address": "Magdalena,Buenos Aires",
+        "description": "Como fiestas patronales, festivales folklóricos o eventos relacionados con la producción.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "Figuras históricas o personajes destacados nacidos o vinculados a Magdalena",
+        "address": "Magdalena,Buenos Aires",
+        "description": "AIndividuos que hayan dejado una marca en la historia local o nacional.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "Espacios naturales cercanos: ",
+        "address": "Magdalena,Buenos Aires",
+        "description": "Si hay parques, reservas naturales o áreas de recreación al aire libre en los alrededores de Magdalena.",
+        "image": "images/asturias.jpg"
+      },
+      {
+        "name": "El casco histórico de Magdalena: ",
+        "address": "Magdalena,Buenos Aires",
+        "description": "Con su arquitectura colonial y edificios antiguos que cuentan la historia del pueblo.",
+        "image": "images/asturias.jpg"
+      }
+    ]
+}    

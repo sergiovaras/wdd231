@@ -479,6 +479,133 @@ footer {
     .join-us {
         flex-direction: column;
     }
-}     
+} 
+
+.discover-layout{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+.sidebar {
+    padding: 15px;
+    background-color: #f9f9f9; /* Ejemplo de fondo para la barra lateral */
+    border-radius: 5px;
+}
+.sidebar h2, .sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.calendar {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los días de la semana */
+    gap: 5px; /* Espacio entre los cuadrados de los días */
+}
+
+.calendar-grid div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee; /* **Esto crea el borde visible y los "cuadrados"** */
+    background-color: #f4f4f4; /* Ejemplo de fondo para los cuadrados de los días */
+    border-radius: 3px;
+    cursor: pointer; /* Indica que los días son clickeables */
+}
+
+.calendar-grid div.today {
+    background-color: #007bff; /* Resalta el día actual */
+    color: white;
+}
+
+.calendar-grid div.inactive {
+    color: #ccc; /* Estilo para los días fuera del mes actual */
+}
+
+
+.gallery {
+    padding: 15px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-grid figure {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-grid img.lazy {
+    filter: blur(10px); /* Effect while charging */
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, filter 1s ease;
+    filter: none ; /* Asegurar que el blur desaparezca */
+}
+
+.photo-grid h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.photo-grid address {
+    font-style: normal;
+    color: black;
+}
+
+.photo-grid p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.learn-more {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.learn-more:hover {
+    background: 
+    #34495e;
+}
     
     
