@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap');
+/* Color Schema */
+:root {
+    --primary-color: #A0522D; /* Sienna */
+    --accent-color: #CC5500; /* Burnt Orange */
+    --background-color: #F5F5DC; /* Beige */
+  }
+  
+  /* Apply colors to elements */
+  a {
+    color: var(--primary-color); /* Example for links */
+  }
+  
+  button,
+  .button { /* If you have button classes */
+    background-color: var(--primary-color);
+    color: white; /* Or a contrasting text color */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+  }
+  
+  hr { /* Example for borders */
+    border-color: var(--accent-color);
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: #333; /* Default text color on the background */
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display to headings */
+    font-style: normal; /* Override any potential italic */
+    font-weight: bold; /* As per your description */
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Assuming you meant Roboto for body */
+    font-style: italic; /* Apply italic to the body text */
+    font-weight: normal; /* Or the desired weight */
+  }
+  
+  /* Specific element adjustments if needed */
+  /* Example: Making links more prominent on hover */
+  a:hover {
+    text-decoration: underline;
+    color: darken(var(--primary-color), 10%); /* A darker shade on hover */
+  }
