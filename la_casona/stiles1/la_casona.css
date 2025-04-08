@@ -150,3 +150,71 @@ footer{
   height: 40px;
   margin: 0 0.5rem;
 }
+/* Estilos para cada tarjeta de reserva */
+.tarjeta-reserva {
+  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para la imagen de la tarjeta */
+.tarjeta-reserva img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 6px; /* Bordes redondeados para la imagen */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+  object-fit: cover; /* Cubre el contenedor sin deformar la imagen (puede recortar) */
+  max-height: 200px; /* Altura máxima de la imagen */
+}
+
+/* Estilos para el título de la tarjeta */
+.tarjeta-reserva h3 {
+  font-size: 1.5em; /* Tamaño del título */
+  margin-top: 0; /* Elimina el margen superior predeterminado */
+  margin-bottom: 8px; /* Espacio debajo del título */
+  color: var(--accent-color); /* Usa el color acento definido en :root */
+}
+
+/* Estilos para la descripción de la tarjeta */
+.tarjeta-reserva p {
+  font-size: 1em; /* Tamaño de la descripción */
+  line-height: 1.4; /* Espaciado entre líneas para mejor legibilidad */
+  margin-bottom: 12px; /* Espacio debajo de la descripción */
+  color: #555; /* Color del texto de la descripción */
+}
+
+
+/* Estilos para el botón de reserva */
+.tarjeta-reserva .boton-reserva {
+  display: inline-block; /* Para poder definir padding y otros estilos de bloque */
+  background-color: var(--primary-color); /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  font-weight: bold; /* Texto del botón en negrita */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Estilos para el botón de reserva en hover */
+.tarjeta-reserva .boton-reserva:hover {
+  background-color: darken(var(--primary-color), 10%); /* Oscurece el botón al pasar el mouse */
+}
+
+/* Estilos para la sección de reservas (contenedor del título y las tarjetas) */
+#seccion-reservas {
+  padding: 30px 0; /* Espacio superior e inferior de la sección */
+  text-align: center; /* Centra el título de la sección */
+}
+
+#seccion-reservas h2 {
+  font-size: 2em; /* Tamaño del título de la sección */
+  color: var(--accent-color); /* Usa el color acento */
+  margin-bottom: 20px; /* Espacio debajo del título de la sección */
+}
