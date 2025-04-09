@@ -1,0 +1,83 @@
+[
+    {
+        "id":"plate 1",
+        "name":"Argentinean Roast",
+        "description":"A grilled cut of beef, slowly cooked for unique tenderness and flavor. Includes chorizo, blood sausage, and offal.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida1.webp",
+        "category":"Meats",
+        "popularity":5
+    },
+
+    {
+        "id":"plate 2",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 3",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 4",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 5",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 6",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 7",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 8",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 9",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    },
+    {
+        "id":"plate 10",
+        "name":"",
+        "description":"",
+        "image":"",
+        "category":"",
+        "popularity":5
+    }
+]

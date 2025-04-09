@@ -1,4 +1,4 @@
-fetch('reserva.json')
+fetch('data1/reserva.json')
   .then(response => response.json())
   .then(data => {
     const contenedorReservas = document.getElementById('contenedor-reservas'); // Asegúrate de tener un elemento con este ID en tu HTML
@@ -7,28 +7,25 @@ fetch('reserva.json')
       const tarjeta = document.createElement('div');
       tarjeta.classList.add('tarjeta-reserva'); // Añade una clase para estilos CSS
 
-      const imagen = document.createElement('img');
-      imagen.src = reserva.imagen;
-      imagen.alt = reserva.titulo;
+      const image = document.createElement('img');
+      image.src = reserva.image;
+      image.alt = reserva.title;
 
-      const titulo = document.createElement('h3');
-      titulo.textContent = reserva.titulo;
+      const title = document.createElement('h3');
+      title.textContent = reserva.title;
 
-      const descripcion = document.createElement('p');
-      descripcion.textContent = reserva.descripcion;
+      const description = document.createElement('p');
+      description.textContent = reserva.description;
 
-      const precio = document.createElement('p');
-      precio.textContent = reserva.precio === "Consultar" ? "Precio: Consultar" : `Precio: ${reserva.precio} ${reserva.moneda}`;
 
       const botonReserva = document.createElement('a');
       botonReserva.href = reserva.enlace_reserva;
       botonReserva.textContent = reserva.precio === "Consultar" ? "Contactar" : "Reservar Ahora";
       botonReserva.classList.add('boton-reserva'); // Añade una clase para estilos CSS
 
-      tarjeta.appendChild(imagen);
-      tarjeta.appendChild(titulo);
-      tarjeta.appendChild(descripcion);
-      tarjeta.appendChild(precio);
+      tarjeta.appendChild(image);
+      tarjeta.appendChild(title);
+      tarjeta.appendChild(description);
       tarjeta.appendChild(botonReserva);
 
       contenedorReservas.appendChild(tarjeta);

@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const weatherIcon = document.querySelector("#weather-icon");
 const temperature = document.querySelector("#temperature");
 const description =  document.querySelector("#description");
-const sunrise = document.querySelector("#sunrise");
-const sunset = document.querySelector("#sunset");
+
 
 const myKey = "d5441e180151f737d7e144f61bb784ab";
 const lat = "-35.08";
@@ -50,19 +49,10 @@ function displayWeatherResults(data) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', iconDesc);
     temperature.innerHTML = `Temp: ${data.main.temp}&deg;C`;
-    description.innerHTML = `${data.weather[0].description}`;
+   
     
 
 }
 
-function displayForecastResults(data) {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const date = new Date();
-    const tomorrow = (date.getDay()) +1;
-    const dayAfterTomorrow = (date.getDay()) +2;
 
-    day1.innerHTML = `Today: ${data.list[0].main.temp}&deg;C`;
-    day2.innerHTML = `${daysOfWeek[tomorrow]}: ${data.list[6].main.temp}&deg;C`;
-    day3.innerHTML = `${daysOfWeek[dayAfterTomorrow]}: ${data.list[14].main.temp}&deg;C`;
-
-}  
+  

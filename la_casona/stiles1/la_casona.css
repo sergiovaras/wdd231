@@ -150,6 +150,12 @@ footer{
   height: 40px;
   margin: 0 0.5rem;
 }
+#contenedor-reservas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ejemplo */
+  gap: 20px;
+  padding: 20px;
+}
 /* Estilos para cada tarjeta de reserva */
 .tarjeta-reserva {
   background-color: #f9f9f9; /* Color de fondo de la tarjeta */
@@ -161,15 +167,16 @@ footer{
   flex-direction: column; /* Organiza los elementos verticalmente */
   align-items: center; /* Centra los elementos horizontalmente */
   text-align: center; /* Alinea el texto al centro */
+  width: 450px;
 }
 
 /* Estilos para la imagen de la tarjeta */
 .tarjeta-reserva img {
-  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  width: 40%; /* La imagen ocupa todo el ancho de la tarjeta */
   height: auto; /* Mantiene la proporción de la imagen */
   border-radius: 6px; /* Bordes redondeados para la imagen */
   margin-bottom: 10px; /* Espacio debajo de la imagen */
-  object-fit: cover; /* Cubre el contenedor sin deformar la imagen (puede recortar) */
+ 
   max-height: 200px; /* Altura máxima de la imagen */
 }
 
