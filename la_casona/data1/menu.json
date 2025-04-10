@@ -1,6 +1,6 @@
 [
     {
-        "id":"plate 1",
+        "id":"Plate 1",
         "name":"Argentinean Roast",
         "description":"A grilled cut of beef, slowly cooked for unique tenderness and flavor. Includes chorizo, blood sausage, and offal.",
         "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida1.webp",
@@ -9,75 +9,75 @@
     },
 
     {
-        "id":"plate 2",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 2",
+        "name":"Creole Empanadas",
+        "description":"Classic empanadas filled with knife-cut beef, onion, pepper, olives, and hard-boiled egg. Ideal for sharing.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida2.webp",
+        "category":"first course",
         "popularity":5
     },
     {
-        "id":"plate 3",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 3",
+        "name":"Potato Cake",
+        "description":"A comforting classic. Layers of seasoned ground beef and creamy mashed potatoes, oven-baked.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida4.webp",
+        "category":"Main course",
         "popularity":5
     },
     {
-        "id":"plate 4",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 4",
+        "name":"Neapolitan Milanese",
+        "description":"Breaded and fried beef steak, covered with tomato sauce, ham and melted mozzarella cheese.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida3.webp",
+        "category":"Meats",
         "popularity":5
     },
     {
-        "id":"plate 5",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 5",
+        "name":"Locro",
+        "description":"Traditional Argentine stew, thick and hearty, with corn, beans, beef, pork, chorizo, and vegetables. Ideal for cool days.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/locro.webp",
+        "category":"Main course",
         "popularity":5
     },
     {
-        "id":"plate 6",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 6",
+        "name":"Rioja-style steak",
+        "description":"Good steak with the richness of the potatoes, the sweetness of the ham and bell pepper, the freshness of the peas and the smoothness of the fried egg.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/comida6.webp",
+        "category":"Meats",
         "popularity":5
     },
     {
-        "id":"plate 7",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 7",
+        "name":"Chocolate Volcano",
+        "description":"small baked chocolate cake, the center of which remains liquid and warm, simulating the lava of a volcano when cut.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/postre1.webp",
+        "category":"Desserts",
         "popularity":5
     },
     {
-        "id":"plate 8",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 8",
+        "name":"Dulce de leche pancakes",
+        "description":"They consist of thin sheets of dough, generously sprinkled with dulce de leche, that Argentine delicacy made from caramelized milk, with a sweet and intense flavor and a smooth and creamy texture.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/postre2.webp",
+        "category":"Desserts",
         "popularity":5
     },
     {
-        "id":"plate 9",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 9",
+        "name":"Homemade flan",
+        "description":"It is made primarily with eggs, milk, and sugar, cooked in a bain-marie to achieve a delicate and uniform consistency.",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/postre3.webp",
+        "category":"Desserts",
         "popularity":5
     },
     {
-        "id":"plate 10",
-        "name":"",
-        "description":"",
-        "image":"",
-        "category":"",
+        "id":"Plate 10",
+        "name":"Tiramisú",
+        "description":"Classic and sophisticated Italian dessert, highly appreciated worldwide",
+        "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/postre4.webp",
+        "category":"Desserts",
         "popularity":5
     }
 ]

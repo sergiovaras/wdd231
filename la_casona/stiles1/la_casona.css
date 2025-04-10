@@ -225,3 +225,104 @@ footer{
   color: var(--accent-color); /* Usa el color acento */
   margin-bottom: 20px; /* Espacio debajo del título de la sección */
 }
+/* Estilos para el contenedor principal del menú */
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas flexibles */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos para cada plato individual */
+.plato {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Estilos para la imagen del plato */
+.plato img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor de la información del plato (nombre, descripción, etc.) */
+.plato-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el nombre del plato */
+.plato-info h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--accent-color); /* Usando una variable CSS */
+}
+
+/* Estilos para la descripción del plato */
+.plato-info p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Estilos para la categoría del plato */
+.plato-info .categoria {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+/* Estilos para la popularidad del plato */
+.plato-info .popularidad {
+  font-size: 1em;
+  color: var(--primary-color); /* Usando otra variable CSS */
+  font-weight: bold;
+}
+
+/* Estilos para la sección del menú (contenedor del título y la lista de platos) */
+#menu-section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#menu-section h2 {
+  font-size: 2em;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+/* Estilos para pantallas más pequeñas (ejemplo de responsive design) */
+@media (max-width: 600px) {
+  #menu-container {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+
+  .plato {
+    flex-direction: column; /* Asegura que los elementos internos se apilen bien */
+    align-items: center;
+    text-align: center;
+  }
+
+  .plato img {
+    max-height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .plato-info {
+    align-items: center;
+  }
+}
