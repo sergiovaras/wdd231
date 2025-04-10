@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant La Casona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stiles1/la_casona.css">
+    <script src="scipts1/lacasona.js" defer></script>
+    <script src="scipts1/menu.js" defer></script>
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="stiles1/normalize.css">
+
+</head>
+<body>
+    <header>
+        <section class="cards" id="weather-card">
+            <p>Magdalena</p>
+            <p id="temperature"></p>
+            <img id="weather-icon" src="" alt="weather icon">  
+        </section>   
+        <div class="logo">
+            <img src="image1/logocasona.webp" alt="La Casona Rlogo" width="150" height="150">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="menu.html">Popular Dishes</a></li>
+                <li><a href="reserve.html">Reserve </a></li>
+                <li><a href="">Discover </a></li>
+            </ul> 
+        </nav>
+        <div class="hamburger-menu">
+            <button>Menu</button>
+        </div>      
+    </header>
+    <main>
+        <section id="reserva-dos-personas">
+            <h2>Reserva para Dos Personas</h2>
+            <form id="form-dos-personas">
+              <div>
+                <label for="nombre-dos">Nombre:</label>
+                <input type="text" id="nombre-dos" name="nombre" required>
+              </div>
+              <div>
+                <label for="apellido-dos">Apellido:</label>
+                <input type="text" id="apellido-dos" name="apellido" required>
+              </div>
+              <div>
+                <label for="email-dos">Email:</label>
+                <input type="email" id="email-dos" name="email" required>
+              </div>
+              <div>
+                <label for="telefono-dos">Teléfono:</label>
+                <input type="tel" id="telefono-dos" name="telefono">
+              </div>
+              <div>
+                <label for="fecha-dos">Fecha de Reserva:</label>
+                <input type="date" id="fecha-dos" name="fecha" required>
+              </div>
+              <div>
+                <label for="hora-dos">Hora de Reserva:</label>
+                <input type="time" id="hora-dos" name="hora" required>
+              </div>
+              <div>
+                <label for="notas-dos">Notas Adicionales:</label>
+                <textarea id="notas-dos" name="notas" rows="4"></textarea>
+              </div>
+              <button type="submit">Enviar Solicitud de Reserva</button>
+            </form>
+        </section>
+
+        
+        <section id="reserva-familiar">
+            <h2>Reserva Familiar</h2>
+            <form id="form-familiar">
+              <div>
+                <label for="nombre-familiar">Nombre del Contacto:</label>
+                <input type="text" id="nombre-familiar" name="nombre" required>
+              </div>
+              <div>
+                <label for="apellido-familiar">Apellido del Contacto:</label>
+                <input type="text" id="apellido-familiar" name="apellido" required>
+              </div>
+              <div>
+                <label for="email-familiar">Email:</label>
+                <input type="email" id="email-familiar" name="email" required>
+              </div>
+              <div>
+                <label for="telefono-familiar">Teléfono:</label>
+                <input type="tel" id="telefono-familiar" name="telefono">
+              </div>
+              <div>
+                <label for="fecha-familiar">Fecha de Reserva:</label>
+                <input type="date" id="fecha-familiar" name="fecha" required>
+              </div>
+              <div>
+                <label for="hora-familiar">Hora de Reserva:</label>
+                <input type="time" id="hora-familiar" name="hora" required>
+              </div>
+              <div>
+                <label for="cantidad-adultos">Cantidad de Adultos:</label>
+                <input type="number" id="cantidad-adultos" name="adultos" min="1" value="1" required>
+              </div>
+              <div>
+                <label for="cantidad-ninos">Cantidad de Niños:</label>
+                <input type="number" id="cantidad-ninos" name="ninos" min="0" value="0">
+              </div>
+              <div>
+                <label for="notas-familiar">Notas Adicionales:</label>
+                <textarea id="notas-familiar" name="notas" rows="4"></textarea>
+              </div>
+              <button type="submit">Enviar Solicitud de Reserva Familiar</button>
+            </form>
+        </section>
+
+
+        <section id="solicitud-evento">
+            <h2>Solicitud de Evento</h2>
+            <form id="form-evento">
+              <div>
+                <label for="nombre-evento">Nombre del Contacto:</label>
+                <input type="text" id="nombre-evento" name="nombre" required>
+              </div>
+              <div>
+                <label for="apellido-evento">Apellido del Contacto:</label>
+                <input type="text" id="apellido-evento" name="apellido" required>
+              </div>
+              <div>
+                <label for="email-evento">Email:</label>
+                <input type="email" id="email-evento" name="email" required>
+              </div>
+              <div>
+                <label for="telefono-evento">Teléfono:</label>
+                <input type="tel" id="telefono-evento" name="telefono">
+              </div>
+              <div>
+                <label for="tipo-evento">Tipo de Evento:</label>
+                <select id="tipo-evento" name="tipo" required>
+                  <option value="">Seleccionar Tipo</option>
+                  <option value="cumpleanos">Cumpleaños</option>
+                  <option value="aniversario">Aniversario</option>
+                  <option value="reunion-empresarial">Reunión Empresarial</option>
+                  <option value="celebracion-especial">Celebración Especial</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div>
+                <label for="fecha-evento">Fecha del Evento (Tentativa):</label>
+                <input type="date" id="fecha-evento" name="fecha">
+              </div>
+              <div>
+                <label for="hora-evento">Hora del Evento (Tentativa):</label>
+                <input type="time" id="hora-evento" name="hora">
+              </div>
+              <div>
+                <label for="cantidad-asistentes">Cantidad Estimada de Asistentes:</label>
+                <input type="number" id="cantidad-asistentes" name="asistentes" min="1" value="1" required>
+              </div>
+              <div>
+                <label for="requerimientos-evento">Requerimientos Adicionales:</label>
+                <textarea id="requerimientos-evento" name="requerimientos" rows="6"></textarea>
+              </div>
+              <button type="submit">Enviar Solicitud de Evento</button>
+            </form>
+        </section>
+
+        
+    </main>
+    <footer>
+        </section>   
+            <div class="logo1">
+                <img src="image1/logocasona.webp" alt="La Casona Rlogo" width="100" height="100">
+            </div>
+        </section>
+
+        <div class="redes">
+            <a href="#"><img src="image1/Colored_Facebook3_svg-64.webp" alt="Facebook"></a>
+            <a href="#"><img src="image1/X-64.webp" alt="Twitter"></a>
+            <a href="#"><img src="image1/instagram.webp" alt="Instagram"></a>
+            <p>Sergio Varas, WDD 231</p>
+            
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
