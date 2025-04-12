@@ -3,18 +3,21 @@
         "title":"Romantic Dinner for Two",
         "description":"Enjoy an unforgettable evening with our special menu for couples.",
         "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/Cena-romantica.webp",
-        "reservation_link":""
+        "enlace_reserva": "#romantic-dinner",
+        "formId": "romantic-dinner"
     },
     {
       "title":"Family Lunch",
         "description":"Gather with your loved ones and share our delicious lunchtime dishes.",
         "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/resta1.webp",
-        "reservation_link":""  
+        "enlace_reserva": "#Family Dinner",
+        "formId": "Family-Dinner"  
     },
     {
         "title":"Group Event",
         "description":"Celebra con nosotros tus eventos especiales. ¡Consulta nuestras opciones para grupos!",
         "image":"https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/evento-rest.webp",
-        "reservation_link":""
+        "enlace_reserva": "#event-request",
+        "formId": "event-request"
     }
 ]

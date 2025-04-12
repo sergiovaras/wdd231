@@ -19,8 +19,8 @@ fetch('data1/reserva.json')
 
 
       const botonReserva = document.createElement('a');
-      botonReserva.href = reserva.enlace_reserva;
-      botonReserva.textContent = reserva.precio === "Consultar" ? "Contactar" : "Reservar Ahora";
+      botonReserva.href = "reserve.html";
+      botonReserva.textContent  = "Book Now";
       botonReserva.classList.add('boton-reserva'); // Añade una clase para estilos CSS
 
       tarjeta.appendChild(image);
@@ -34,3 +34,5 @@ fetch('data1/reserva.json')
   .catch(error => {
     console.error('Error al cargar las reservas:', error);
   });
+
+  

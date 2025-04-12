@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stiles1/la_casona.css">
     <script src="scipts1/lacasona.js" defer></script>
-    <script src="scipts1/menu.js" defer></script>
+    <script src="scipts1/reserve.js" defer></script>
     <link rel="icon" href="favicon-16x16.png">
     <link rel="stylesheet" href="stiles1/normalize.css">
+ 
 
 </head>
-<body>
+<body class="reserve-background">
     <header>
         <section class="cards" id="weather-card">
             <p>Magdalena</p>
@@ -37,133 +38,142 @@
         </div>      
     </header>
     <main>
-        <section id="reserva-dos-personas">
-            <h2>Reserva para Dos Personas</h2>
-            <form id="form-dos-personas">
+        <section id="romantic-dinner">
+            <h2>Romantic Dinner</h2>
+            <section class="image-section">
+              <img src="image1/Cena-romantica.webp" width="600" height="500" alt="Cena Romántica">
+            </section>    
+            <form id="form-romantic-dinner">
               <div>
-                <label for="nombre-dos">Nombre:</label>
-                <input type="text" id="nombre-dos" name="nombre" required>
+                <label for="name-two">Name:</label>
+                <input type="text" id="name-two" name="name" required>
               </div>
               <div>
-                <label for="apellido-dos">Apellido:</label>
-                <input type="text" id="apellido-dos" name="apellido" required>
+                <label for="last-name-two">Last Name:</label>
+                <input type="text" id="last-name-two" name="last-name" required>
               </div>
               <div>
-                <label for="email-dos">Email:</label>
-                <input type="email" id="email-dos" name="email" required>
+                <label for="email-two">Email:</label>
+                <input type="email" id="email-two" name="email" required>
               </div>
               <div>
-                <label for="telefono-dos">Teléfono:</label>
-                <input type="tel" id="telefono-dos" name="telefono">
+                <label for="phone-two">Phone:</label>
+                <input type="tel" id="phone-two" name="phone">
               </div>
               <div>
-                <label for="fecha-dos">Fecha de Reserva:</label>
-                <input type="date" id="fecha-dos" name="fecha" required>
+                <label for="date-two">Reservation Date:</label>
+                <input type="date" id="date-two" name="date" required>
               </div>
               <div>
-                <label for="hora-dos">Hora de Reserva:</label>
-                <input type="time" id="hora-dos" name="hora" required>
+                <label for="time-two">Reservation Time:</label>
+                <input type="time" id="time-two" name="time" required>
               </div>
               <div>
-                <label for="notas-dos">Notas Adicionales:</label>
-                <textarea id="notas-dos" name="notas" rows="4"></textarea>
+                <label for="note-two">Additional Notes:</label>
+                <textarea id="note-two" name="note" rows="4"></textarea>
               </div>
-              <button type="submit">Enviar Solicitud de Reserva</button>
+              <button type="submit">Submit Reservation Request</button>
             </form>
         </section>
-
         
-        <section id="reserva-familiar">
-            <h2>Reserva Familiar</h2>
-            <form id="form-familiar">
+        
+        <section id="Family-Dinner">
+            <h2>Family Dinner</h2>
+            <section class="image-section">
+              <img src="image1/resta1.webp" width="600" height="500" alt="family">
+            </section>    
+            <form id="form-family">
               <div>
-                <label for="nombre-familiar">Nombre del Contacto:</label>
-                <input type="text" id="nombre-familiar" name="nombre" required>
+                <label for="name-family">Contact Name:</label>
+                <input type="text" id="name-family" name="name" required>
               </div>
               <div>
-                <label for="apellido-familiar">Apellido del Contacto:</label>
-                <input type="text" id="apellido-familiar" name="apellido" required>
+                <label for="last-name-family">Contact Last Name:</label>
+                <input type="text" id="last-name-family" name="last-name" required>
               </div>
               <div>
-                <label for="email-familiar">Email:</label>
-                <input type="email" id="email-familiar" name="email" required>
+                <label for="email-family">Email:</label>
+                <input type="email" id="email-family" name="email" required>
               </div>
               <div>
-                <label for="telefono-familiar">Teléfono:</label>
-                <input type="tel" id="telefono-familiar" name="telefono">
+                <label for="phone-family">Phone:</label>
+                <input type="tel" id="phone-family" name="phone">
               </div>
               <div>
-                <label for="fecha-familiar">Fecha de Reserva:</label>
-                <input type="date" id="fecha-familiar" name="fecha" required>
+                <label for="date-family">Reservation Date:</label>
+                <input type="date" id="fecha-familiar" name="date" required>
               </div>
               <div>
-                <label for="hora-familiar">Hora de Reserva:</label>
-                <input type="time" id="hora-familiar" name="hora" required>
+                <label for="time-family">Reservation Time:</label>
+                <input type="time" id="time-family" name="time" required>
               </div>
               <div>
-                <label for="cantidad-adultos">Cantidad de Adultos:</label>
-                <input type="number" id="cantidad-adultos" name="adultos" min="1" value="1" required>
+                <label for="quantity-adults">Quantity-Adults:</label>
+                <input type="number" id="quantity-adults" name="adults" min="1" value="1" required>
               </div>
               <div>
-                <label for="cantidad-ninos">Cantidad de Niños:</label>
-                <input type="number" id="cantidad-ninos" name="ninos" min="0" value="0">
+                <label for="number-of-children">Number of Children</label>
+                <input type="number" id="number-of-children" name="Children" min="0" value="0">
               </div>
               <div>
-                <label for="notas-familiar">Notas Adicionales:</label>
-                <textarea id="notas-familiar" name="notas" rows="4"></textarea>
+                <label for="note-family">Note Family:</label>
+                <textarea id="note-family" name="note" rows="4"></textarea>
               </div>
-              <button type="submit">Enviar Solicitud de Reserva Familiar</button>
+              <button type="submit">Submit Family Reservation Request</button>
             </form>
         </section>
 
 
-        <section id="solicitud-evento">
-            <h2>Solicitud de Evento</h2>
-            <form id="form-evento">
+        <section id="event-request">
+            <h2>Event Request</h2>
+            <section class="image-section">
+              <img src="image1/salon-de-eventos-privados.webp" width="600" height="500" alt="events">
+            </section>    
+            <form id="form-event">
               <div>
-                <label for="nombre-evento">Nombre del Contacto:</label>
-                <input type="text" id="nombre-evento" name="nombre" required>
+                <label for="name-event">Contact Name:</label>
+                <input type="text" id="name-event" name="name" required>
               </div>
               <div>
-                <label for="apellido-evento">Apellido del Contacto:</label>
-                <input type="text" id="apellido-evento" name="apellido" required>
+                <label for="last-name-event">Contact Last Name:</label>
+                <input type="text" id="last-name-event" name="last-name" required>
               </div>
               <div>
-                <label for="email-evento">Email:</label>
-                <input type="email" id="email-evento" name="email" required>
+                <label for="email-event">Email:</label>
+                <input type="email" id="email-event" name="email" required>
               </div>
               <div>
-                <label for="telefono-evento">Teléfono:</label>
-                <input type="tel" id="telefono-evento" name="telefono">
+                <label for="phone-event">Phone:</label>
+                <input type="tel" id="phone-event" name="phone">
               </div>
               <div>
-                <label for="tipo-evento">Tipo de Evento:</label>
-                <select id="tipo-evento" name="tipo" required>
-                  <option value="">Seleccionar Tipo</option>
-                  <option value="cumpleanos">Cumpleaños</option>
-                  <option value="aniversario">Aniversario</option>
-                  <option value="reunion-empresarial">Reunión Empresarial</option>
-                  <option value="celebracion-especial">Celebración Especial</option>
-                  <option value="otro">Otro</option>
+                <label for="type-event">Type of Event:</label>
+                <select id="type-event" name="type" required>
+                  <option value="">Select Type</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="business meeting">Business Meeting</option>
+                  <option value="special celebration">Special Celebration</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
               <div>
-                <label for="fecha-evento">Fecha del Evento (Tentativa):</label>
-                <input type="date" id="fecha-evento" name="fecha">
+                <label for="date-event">Date of time (Tentativa):</label>
+                <input type="date" id="date-event" name="date">
               </div>
               <div>
-                <label for="hora-evento">Hora del Evento (Tentativa):</label>
-                <input type="time" id="hora-evento" name="hora">
+                <label for="time-event">Time of event (Tentativa):</label>
+                <input type="time" id="time-event" name="time">
               </div>
               <div>
-                <label for="cantidad-asistentes">Cantidad Estimada de Asistentes:</label>
-                <input type="number" id="cantidad-asistentes" name="asistentes" min="1" value="1" required>
+                <label for="number-attendees">Estimated Number of Attendees:</label>
+                <input type="number" id="number-attendees" name="attendees" min="1" value="1" required>
               </div>
               <div>
-                <label for="requerimientos-evento">Requerimientos Adicionales:</label>
-                <textarea id="requerimientos-evento" name="requerimientos" rows="6"></textarea>
+                <label for="event-requirements">"Event Equirements":</label>
+                <textarea id="requerimientos-evento" name="equirements" rows="6"></textarea>
               </div>
-              <button type="submit">Enviar Solicitud de Evento</button>
+              <button type="submit">Submit Event Request</button>
             </form>
         </section>
 
