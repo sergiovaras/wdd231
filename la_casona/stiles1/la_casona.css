@@ -68,10 +68,35 @@ nav.main-nav ul li {
   header .main-nav ul li {
       margin: 0 15px;
   }
+  
 }
-.hero{
+.image-slider {
+  position: relative; /* Para posicionar los controles si los agregas */
+  width: 100%; /* O el ancho que desees para tu carrusel */
+  height: 800px; /* Ajusta la altura según tus imágenes */
+  overflow: hidden; /* Oculta las imágenes que están fuera del contenedor */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  opacity: 0; /* Inicialmente todas las imágenes están ocultas */
+  transition: opacity 1s ease-in-out; /* Transición suave para el cambio */
 }
+
+.slide.active {
+  opacity: 1; /* La imagen activa es visible */
+}
+
+.slide img {
+  display: block; /* Elimina el espacio extra debajo de la imagen */
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
 .food {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
