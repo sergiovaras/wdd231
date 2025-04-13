@@ -67,10 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
       showSlide(currentIndex);
     }
   
-    // Cambia la imagen cada 3 segundos (3000 milisegundos)
+
     setInterval(nextSlide, 3000);
-  
-    // Muestra la primera imagen al cargar la página
     showSlide(currentIndex);
   });
 

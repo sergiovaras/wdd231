@@ -2,8 +2,8 @@
 /* Color Schema */
 :root {
     --primary-color: #A0522D; /* Sienna */
-    --accent-color: #CC5500; /* Burnt Orange */
-    --background-color: #F5F5DC; /* Beige */
+    --accent-color: #CC5500; 
+    --background-color: #F5F5DC; 
   }
 header {
     background-color: #A0522D; 
@@ -15,7 +15,7 @@ header {
     max-height: 200px;
 }  
 
-  /* Styles for the hamburger menu */
+  
 .hamburger-menu button {
   font-size: 24px;
   cursor: pointer;
@@ -26,10 +26,10 @@ header {
 }
 
 .hamburger-menu button::before {
-  content: '☰'; /* Hamburger icon */
+  content: '☰'; /* 
 }
 
-.hamburger-menu button.active::before {
+{
   content: '✖'; /* Cross icon */
 }
 /* Default state of the menu (hidden in mobile) */
@@ -96,16 +96,34 @@ nav.main-nav ul li {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-
 .food {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: auto 1fr; /* La primera columna (imagen) se ajusta al contenido, la segunda (texto) ocupa el resto */
   padding: 50px;
+  background-color: #A0522D;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+  align-items: center; /* Opcional: alinea verticalmente la imagen y el texto al centro */
 }
-.food h2{
-  position: relative;
-  top: 200px;
-  left: 200px;
+
+.food-image {
+  /* Puedes agregar estilos específicos para la imagen si lo deseas, como un ancho máximo */
+  max-width: 300px; /* Ejemplo de ancho máximo para la imagen */
+}
+
+.food-image img {
+  display: block; /* Evita espacio extra debajo de la imagen */
+  width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.food-content {
+  /* Estilos para el contenedor del título y el texto si es necesario */
+  color: white; /* Ejemplo: texto blanco sobre el fondo marrón */
+}
+
+.food-content h2 {
+  margin-top: 0;
+  color: #030202; /* Elimina el margen superior predeterminado del h2 */
 }
 
   /* Apply colors to elements */
@@ -154,8 +172,7 @@ a:hover {
 footer{
   background-color: #A0522D; 
   color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
 }
 .redes{
   
@@ -175,7 +192,7 @@ footer{
 }
 #contenedor-reservas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr, 2fr)); /* Ejemplo */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ejemplo */
   gap: 20px;
   padding: 10px;
 }
@@ -190,12 +207,12 @@ footer{
   flex-direction: column; /* Organiza los elementos verticalmente */
   align-items: center; /* Centra los elementos horizontalmente */
   text-align: center; /* Alinea el texto al centro */
-  width: 450px;
+  width: 350px;
 }
 
 /* Estilos para la imagen de la tarjeta */
 .tarjeta-reserva img {
-  width: 40%; /* La imagen ocupa todo el ancho de la tarjeta */
+  width: 30%; /* La imagen ocupa todo el ancho de la tarjeta */
   height: auto; /* Mantiene la proporción de la imagen */
   border-radius: 6px; /* Bordes redondeados para la imagen */
   margin-bottom: 10px; /* Espacio debajo de la imagen */
@@ -255,8 +272,13 @@ footer{
   gap: 20px;
   padding: 20px;
 }
+.plato img:hover {
+  transform: scale(1.45); /* Ligeramente más grande al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
 
-/* Estilos para cada plato individual */
+
 .plato {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -269,7 +291,7 @@ footer{
   padding: 15px;
 }
 
-/* Estilos para la imagen del plato */
+
 .plato img {
   width: 100%;
   max-height: 200px;
@@ -278,22 +300,21 @@ footer{
   margin-bottom: 10px;
 }
 
-/* Estilos para el contenedor de la información del plato (nombre, descripción, etc.) */
 .plato-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Estilos para el nombre del plato */
+
 .plato-info h3 {
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 5px;
-  color: var(--accent-color); /* Usando una variable CSS */
+  color: var(--accent-color); 
 }
+ 
 
-/* Estilos para la descripción del plato */
 .plato-info p {
   font-size: 1em;
   line-height: 1.4;
@@ -301,7 +322,7 @@ footer{
   color: #555;
 }
 
-/* Estilos para la categoría del plato */
+
 .plato-info .categoria {
   font-size: 0.9em;
   color: #777;
@@ -309,14 +330,14 @@ footer{
   font-style: italic;
 }
 
-/* Estilos para la popularidad del plato */
+
 .plato-info .popularidad {
   font-size: 1em;
-  color: var(--primary-color); /* Usando otra variable CSS */
+  color: var(--primary-color); /
   font-weight: bold;
 }
 
-/* Estilos para la sección del menú (contenedor del título y la lista de platos) */
+
 #menu-section {
   padding: 30px 0;
   text-align: center;
@@ -328,14 +349,14 @@ footer{
   margin-bottom: 20px;
 }
 
-/* Estilos para pantallas más pequeñas (ejemplo de responsive design) */
+
 @media (max-width: 600px) {
   #menu-container {
-    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    grid-template-columns: 1fr; 
   }
 
   .plato {
-    flex-direction: column; /* Asegura que los elementos internos se apilen bien */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -349,15 +370,13 @@ footer{
     align-items: center;
   }
 }
-/* Estilos para el contenedor principal de las tarjetas de reserva */
+
 main {
     display: flex;
    
-    align-items: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; 
     padding: 20px;
 }
-
-/* Estilos para las secciones de reserva como tarjetas centradas y con ancho limitado */
 #romantic-dinner,
 #Family-Dinner,
 #event-request {
@@ -367,15 +386,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    width: 80%; /* Limita el ancho de las tarjetas (ajusta según necesites) */
-    max-width: 600px; /* Establece un ancho máximo para pantallas más grandes */
+    width: 80%; 
+    max-width: 600px; 
 }
 
 #romantic-dinner h2,
 #Family-Dinner h2,
 #event-request h2 {
     font-family: 'Playfair Display', serif;
-    color: #a0522d; /* Marrón tierra */
+    color: #a0522d; 
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -383,7 +402,7 @@ main {
     border-bottom: 1px solid #eee;
 }
 
-/* Estilos para los formularios dentro de las tarjetas */
+
 form#form-romantic-dinner div,
 form#form-family div,
 form#form-event div {
@@ -437,7 +456,7 @@ form#form-event textarea {
 form#form-romantic-dinner button[type="submit"],
 form#form-family button[type="submit"],
 form#form-event button[type="submit"] {
-    background-color: #cc5500; /* Naranja quemado */
+    background-color: #cc5500; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -453,10 +472,10 @@ form#form-event button[type="submit"] {
 form#form-romantic-dinner button[type="submit"]:hover,
 form#form-family button[type="submit"]:hover,
 form#form-event button[type="submit"]:hover {
-    background-color: #a0522d; /* Marrón tierra más oscuro */
+    background-color: #a0522d; 
 }
 
-/* Estilos específicos para el formulario familiar (cantidad de personas) */
+
 form#form-family div#quantity-adults,
 form#form-family div#number-of-children {
     display: inline-block;
@@ -469,7 +488,7 @@ form#form-family div#number-of-children:last-child {
     margin-right: 0;
 }
 
-/* Estilos específicos para el formulario de eventos (tipo de evento, asistentes) */
+
 form#form-event div#type-event,
 form#form-event div#number-attendees {
     display: inline-block;
@@ -482,18 +501,18 @@ form#form-event div#number-attendees:last-child {
     margin-right: 0;
 }
 
-/* Ajuste para textarea de requerimientos de eventos */
+
 form#form-event div#event-requirements textarea {
     width: calc(100% - 12px);
 }
 
-/* Media queries para hacerlo responsive (ejemplos) */
+
 @media (max-width: 768px) {
     #romantic-dinner,
     #Family Dinner,
     #event-request {
-        width: 95%; /* Ajusta el ancho en pantallas más pequeñas */
-        max-width: none; /* Elimina el ancho máximo */
+        width: 95%;*
+        max-width: none; 
     }
 
     form#form-family div#quantity-adults,
@@ -507,18 +526,182 @@ form#form-event div#event-requirements textarea {
 #romantic-dinner,
 #Family-Dinner,
 #event-request {
-  /* Ejemplo de ancho fijo */
+  
   margin-left: auto;
   margin-right: auto;
-  /* Otros estilos de tus formularios */
-  padding: 20px; /* Añade un poco de espacio interno */
-  border: 1px solid #ccc; /* Ejemplo de borde */
-  border-radius: 5px; /* Ejemplo de esquinas redondeadas */
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; /
 }
 .reserve-background{
   background-image: url('https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/logocasona.webp'); /* Ruta a tu logo */
   background-repeat: repeat;
-  background-size: auto 100px; /* Ejemplo: Ancho automático, altura de 100px */
-  background-position: center top; /* Ejemplo: Comienza desde el centro superior */
-  /* Otros estilos para tu body */
+  background-position: center top;
+  
+}
+/*history*/
+main.history-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+section.history-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section.history-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+section.history-section h1,
+section.history-section h2 {
+    color: #A0522D;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section.history-section h1 {
+    font-size: 2.2em;
+    text-align: center;
+    border-bottom: 2px solid #A0522D;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+section.history-section h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.history-main-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.history-inline-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 20px 15px 0;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.history-quote {
+    font-style: italic;
+    color: #777;
+    margin: 25px 0;
+    padding-left: 20px;
+    border-left: 3px solid #d8b384;
+}
+
+.history-action-button {
+    display: inline-block;
+    background-color: #A0522D;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.history-action-button:hover {
+    background-color: #8B4513;
+}
+footer {
+  background-color: #A0522D;
+  color: #f4f4f4; 
+  padding: 30px 500px; 
+  text-align: center; 
+  font-size: 0.9em;
+}
+
+footer section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+footer .logo1 {
+  margin-right: 20px; /
+}
+
+footer .logo1 img {
+  display: block; 
+  width: 100px;
+  height: auto; /
+}
+
+footer > div { /
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 15px;
+}
+
+footer > div a {
+  margin: 0 10px;
+  text-decoration: none; 
+  
+}
+
+footer > div a img {
+  width: 32px;
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.8; /* Slightly reduce opacity */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer > div a img:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+footer p {
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+footer p a {
+  color: #d8b384; /* A lighter brown for links */
+  text-decoration: underline; /* Add underline for links */
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #f4f4f4; /* Light color on hover */
+}
+
+footer img[alt="Qr information"] {
+  display: block; /* Ensure the QR code is on its own line */
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin: 20px auto 0; /* Center the QR code and add top margin */
+}
+
+/* Media query for smaller screens to adjust layout if needed */
+@media (max-width: 600px) {
+  footer section {
+      flex-direction: column; /* Stack logo and potential other elements on smaller screens */
+      align-items: center;
+  }
+
+  footer .logo1 {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
 }

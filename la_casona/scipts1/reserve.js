@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formRomanticDinner.addEventListener('submit', (event) => {
             event.preventDefault(); // Evita la recarga de la página
 
-            alert('¡Gracias! Su solicitud de reserva para una cena romántica ha sido enviada con éxito.');
+            alert('Thank you! Your romantic dinner reservation request has been sent successfully.');
             formRomanticDinner.reset(); // Opcional: Limpia el formulario
         });
     }
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formFamily.addEventListener('submit', (event) => {
             event.preventDefault(); // Evita la recarga de la página
 
-            alert('¡Gracias! Su solicitud de reserva familiar ha sido enviada con éxito.');
+            alert('Thank you! Your family booking request has been sent successfully.');
             formFamily.reset(); // Opcional: Limpia el formulario
         });
     }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formEvent.addEventListener('submit', (event) => {
             event.preventDefault(); // Evita la recarga de la página
 
-            alert('¡Gracias! Su solicitud de evento ha sido enviada con éxito. Nos pondremos en contacto pronto.');
+            alert('Thank you! Your event request has been successfully submitted. We will be in touch soon.');
             formEvent.reset(); // Opcional: Limpia el formulario
         });
     }
