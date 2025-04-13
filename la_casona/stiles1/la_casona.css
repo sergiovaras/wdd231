@@ -2,8 +2,8 @@
 /* Color Schema */
 :root {
     --primary-color: #A0522D; /* Sienna */
-    --accent-color: #CC5500; 
-    --background-color: #F5F5DC; 
+    --accent-color: #CC5500; /* Burnt Orange */
+    --background-color: #F5F5DC; /* Beige */
   }
 header {
     background-color: #A0522D; 
@@ -15,7 +15,7 @@ header {
     max-height: 200px;
 }  
 
-  
+  /* Styles for the hamburger menu */
 .hamburger-menu button {
   font-size: 24px;
   cursor: pointer;
@@ -26,10 +26,10 @@ header {
 }
 
 .hamburger-menu button::before {
-  content: '☰'; /* 
+  content: '☰'; /* Hamburger icon */
 }
 
-{
+.hamburger-menu button.active::before {
   content: '✖'; /* Cross icon */
 }
 /* Default state of the menu (hidden in mobile) */
@@ -274,11 +274,11 @@ footer{
 }
 .plato img:hover {
   transform: scale(1.45); /* Ligeramente más grande al hacer hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
   transition: opacity 0.3s ease-in-out;
 }
 
-
+/* Estilos para cada plato individual */
 .plato {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -291,7 +291,7 @@ footer{
   padding: 15px;
 }
 
-
+/* Estilos para la imagen del plato */
 .plato img {
   width: 100%;
   max-height: 200px;
@@ -300,21 +300,22 @@ footer{
   margin-bottom: 10px;
 }
 
+/* Estilos para el contenedor de la información del plato (nombre, descripción, etc.) */
 .plato-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
+/* Estilos para el nombre del plato */
 .plato-info h3 {
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 5px;
-  color: var(--accent-color); 
+  color: var(--accent-color); /* Usando una variable CSS */
 }
- 
 
+/* Estilos para la descripción del plato */
 .plato-info p {
   font-size: 1em;
   line-height: 1.4;
@@ -322,7 +323,7 @@ footer{
   color: #555;
 }
 
-
+/* Estilos para la categoría del plato */
 .plato-info .categoria {
   font-size: 0.9em;
   color: #777;
@@ -330,14 +331,14 @@ footer{
   font-style: italic;
 }
 
-
+/* Estilos para la popularidad del plato */
 .plato-info .popularidad {
   font-size: 1em;
-  color: var(--primary-color); /
+  color: var(--primary-color); /* Usando otra variable CSS */
   font-weight: bold;
 }
 
-
+/* Estilos para la sección del menú (contenedor del título y la lista de platos) */
 #menu-section {
   padding: 30px 0;
   text-align: center;
@@ -349,14 +350,14 @@ footer{
   margin-bottom: 20px;
 }
 
-
+/* Estilos para pantallas más pequeñas (ejemplo de responsive design) */
 @media (max-width: 600px) {
   #menu-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
   }
 
   .plato {
-    flex-direction: column; 
+    flex-direction: column; /* Asegura que los elementos internos se apilen bien */
     align-items: center;
     text-align: center;
   }
@@ -370,13 +371,15 @@ footer{
     align-items: center;
   }
 }
-
+/* Estilos para el contenedor principal de las tarjetas de reserva */
 main {
     display: flex;
    
-    align-items: center; 
+    align-items: center; /* Centra las tarjetas horizontalmente */
     padding: 20px;
 }
+
+/* Estilos para las secciones de reserva como tarjetas centradas y con ancho limitado */
 #romantic-dinner,
 #Family-Dinner,
 #event-request {
@@ -386,15 +389,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    width: 80%; 
-    max-width: 600px; 
+    width: 80%; /* Limita el ancho de las tarjetas (ajusta según necesites) */
+    max-width: 600px; /* Establece un ancho máximo para pantallas más grandes */
 }
 
 #romantic-dinner h2,
 #Family-Dinner h2,
 #event-request h2 {
     font-family: 'Playfair Display', serif;
-    color: #a0522d; 
+    color: #a0522d; /* Marrón tierra */
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -402,7 +405,7 @@ main {
     border-bottom: 1px solid #eee;
 }
 
-
+/* Estilos para los formularios dentro de las tarjetas */
 form#form-romantic-dinner div,
 form#form-family div,
 form#form-event div {
@@ -456,7 +459,7 @@ form#form-event textarea {
 form#form-romantic-dinner button[type="submit"],
 form#form-family button[type="submit"],
 form#form-event button[type="submit"] {
-    background-color: #cc5500; 
+    background-color: #cc5500; /* Naranja quemado */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -472,10 +475,10 @@ form#form-event button[type="submit"] {
 form#form-romantic-dinner button[type="submit"]:hover,
 form#form-family button[type="submit"]:hover,
 form#form-event button[type="submit"]:hover {
-    background-color: #a0522d; 
+    background-color: #a0522d; /* Marrón tierra más oscuro */
 }
 
-
+/* Estilos específicos para el formulario familiar (cantidad de personas) */
 form#form-family div#quantity-adults,
 form#form-family div#number-of-children {
     display: inline-block;
@@ -488,7 +491,7 @@ form#form-family div#number-of-children:last-child {
     margin-right: 0;
 }
 
-
+/* Estilos específicos para el formulario de eventos (tipo de evento, asistentes) */
 form#form-event div#type-event,
 form#form-event div#number-attendees {
     display: inline-block;
@@ -501,18 +504,18 @@ form#form-event div#number-attendees:last-child {
     margin-right: 0;
 }
 
-
+/* Ajuste para textarea de requerimientos de eventos */
 form#form-event div#event-requirements textarea {
     width: calc(100% - 12px);
 }
 
-
+/* Media queries para hacerlo responsive (ejemplos) */
 @media (max-width: 768px) {
     #romantic-dinner,
     #Family Dinner,
     #event-request {
-        width: 95%;*
-        max-width: none; 
+        width: 95%; /* Ajusta el ancho en pantallas más pequeñas */
+        max-width: none; /* Elimina el ancho máximo */
     }
 
     form#form-family div#quantity-adults,
@@ -526,18 +529,20 @@ form#form-event div#event-requirements textarea {
 #romantic-dinner,
 #Family-Dinner,
 #event-request {
-  
+  /* Ejemplo de ancho fijo */
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  border: 1px solid #ccc; 
-  border-radius: 5px; /
+  /* Otros estilos de tus formularios */
+  padding: 20px; /* Añade un poco de espacio interno */
+  border: 1px solid #ccc; /* Ejemplo de borde */
+  border-radius: 5px; /* Ejemplo de esquinas redondeadas */
 }
 .reserve-background{
   background-image: url('https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/logocasona.webp'); /* Ruta a tu logo */
   background-repeat: repeat;
-  background-position: center top;
-  
+  background-size: auto 100px; /* Ejemplo: Ancho automático, altura de 100px */
+  background-position: center top; /* Ejemplo: Comienza desde el centro superior */
+  /* Otros estilos para tu body */
 }
 /*history*/
 main.history-container {
@@ -634,29 +639,30 @@ footer {
 
 footer section {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  margin-bottom: 20px; 
+  justify-content: center; /* Center items horizontally within the section */
+  align-items: center; /* Center items vertically within the section */
+  margin-bottom: 20px; /* Space between the logo section and social icons */
 }
 
 footer .logo1 {
-  margin-right: 20px; /
+  margin-right: 20px; /* Space between the logo and other potential elements in the section */
 }
 
 footer .logo1 img {
-  display: block; 
+  display: block; /* Prevent extra space below the image */
   width: 100px;
-  height: auto; /
+  height: auto; /* Maintain aspect ratio */
 }
 
-footer > div { /
+footer > div { /* Style the social icons container directly within the footer */
   display: flex;
-  justify-content: center; 
+  justify-content: center; /* Center the social icons */
+  align-items: center;
   margin-bottom: 15px;
 }
 
 footer > div a {
-  margin: 0 10px;
+  margin: 0 10px; /* Space between social icons */
   text-decoration: none; 
   
 }
