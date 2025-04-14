@@ -170,7 +170,8 @@ body {
 /* Example: Making links more prominent on hover */
 a:hover {
   text-decoration: underline;
-  color: darken(var(--primary-color), 10%); /* A darker shade on hover */
+  color: #f05614;
+
 }
 footer{
   background-color: #A0522D; 
@@ -243,7 +244,7 @@ footer{
 /* Estilos para el botón de reserva */
 .tarjeta-reserva .boton-reserva {
   display: inline-block; /* Para poder definir padding y otros estilos de bloque */
-  background-color: var(--primary-color); /* Color de fondo del botón */
+  background-color: #f05614; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
   text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
