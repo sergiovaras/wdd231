@@ -250,7 +250,7 @@ footer{
   text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
   border-radius: 5px; /* Bordes redondeados del botón */
   font-weight: bold; /* Texto del botón en negrita */
-  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  transition: background-color 0.3s ease; /* Transición suave para  hover */
 }
 
 /* Estilos para el botón de reserva en hover */
