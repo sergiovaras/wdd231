@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Menú hamburguesa
+  
   const menuToggle = document.querySelector('.hamburger-menu button');
   const nav = document.querySelector('nav.main-nav');
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.classList.toggle('active');
   });
 
-  // Elementos del clima
+
   const weatherIcon = document.querySelector("#weather-icon");
   const temperature = document.querySelector("#temperature");
   const description = document.querySelector("#description");
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     temperature.innerHTML = `Temp: ${data.main.temp}&deg;C`;
   }
 
-  // Carrusel de imágenes
+ 
   const slides = document.querySelectorAll('.slide');
   let currentIndex = 0;
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (slides && slides.length > 0) {
-    showSlide(currentIndex); // Mostrar la primera imagen al cargar
-    setInterval(nextSlide, 3000); // Iniciar el carrusel automático
+    showSlide(currentIndex); 
+    setInterval(nextSlide, 3000); 
   }
 });
