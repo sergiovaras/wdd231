@@ -255,7 +255,7 @@ footer{
 
 /* Estilos para el botón de reserva en hover */
 .tarjeta-reserva .boton-reserva:hover {
-  background-color: darken(var(--primary-color), 10%); /* Oscurece el botón al pasar el mouse */
+  background-color: #f05614; /* Oscurece el botón al pasar el mouse */
 }
 
 /* Estilos para la sección de reservas (contenedor del título y las tarjetas) */
