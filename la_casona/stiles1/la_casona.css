@@ -68,6 +68,9 @@ nav.main-nav ul li {
   header .main-nav ul li {
       margin: 0 15px;
   }
+.cards h2{
+  color: #ffffff;
+} 
   
 }
 .image-slider {
