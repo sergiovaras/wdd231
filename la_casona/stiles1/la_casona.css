@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap');
 
-/* Color Schema */
 :root {
-    --primary-color: #A0522D; /* Sienna */
-    --accent-color: #CC5500; /* Burnt Orange */
-    --background-color: #F5F5DC; /* Beige */
+    --primary-color: #A0522D; 
+    --accent-color: #CC5500; 
+    --background-color: #F5F5DC; 
   }
 header {
     background-color: #A0522D; 
@@ -27,11 +26,11 @@ header {
 }
 
 .hamburger-menu button::before {
-  content: '☰'; /* Hamburger icon */
+  content: '☰'; 
 }
 
 .hamburger-menu button.active::before {
-  content: '✖'; /* Cross icon */
+  content: '✖'; 
 }
 /* Default state of the menu (hidden in mobile) */
 nav.main-nav {
@@ -75,10 +74,10 @@ nav.main-nav ul li {
   
 }
 .image-slider {
-  position: relative; /* Para posicionar los controles si los agregas */
-  width: 100%; /* O el ancho que desees para tu carrusel */
-  height: 800px; /* Ajusta la altura según tus imágenes */
-  overflow: hidden; /* Oculta las imágenes que están fuera del contenedor */
+  position: relative; 
+  width: 100%; 
+  height: 800px; 
+  overflow: hidden; 
 }
 
 .slide {
@@ -86,59 +85,57 @@ nav.main-nav ul li {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0; /* Inicialmente todas las imágenes están ocultas */
-  transition: opacity 1s ease-in-out; /* Transición suave para el cambio */
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
 }
 
 .slide.active {
-  opacity: 1; /* La imagen activa es visible */
+  opacity: 1; 
 }
 
 .slide img {
-  display: block; /* Elimina el espacio extra debajo de la imagen */
+  display: block; 
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto; 
 }
 
 .food {
   display: grid;
-  grid-template-columns: auto 1fr; /* La primera columna (imagen) se ajusta al contenido, la segunda (texto) ocupa el resto */
+  grid-template-columns: auto 1fr; 
   padding: 50px;
   background-color: #A0522D;
-  gap: 20px; /* Espacio entre la imagen y el texto */
-  align-items: center; /* Opcional: alinea verticalmente la imagen y el texto al centro */
+  gap: 20px; 
+  align-items: center; 
 }
 
 .food-image {
-  /* Puedes agregar estilos específicos para la imagen si lo deseas, como un ancho máximo */
-  max-width: 300px; /* Ejemplo de ancho máximo para la imagen */
+  max-width: 300px; 
 }
 
 .food-image img {
-  display: block; /* Evita espacio extra debajo de la imagen */
-  width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; 
+  width: 100%; 
+  height: auto;
 }
 
 .food-content {
-  /* Estilos para el contenedor del título y el texto si es necesario */
-  color: white; /* Ejemplo: texto blanco sobre el fondo marrón */
+  color: white; 
 }
 
 .food-content h2 {
   margin-top: 0;
-  color: #030202; /* Elimina el margen superior predeterminado del h2 */
+  color: #030202; 
 }
 
-  /* Apply colors to elements */
+  
 a {
-  color: var(--background-color); /* Example for links */
+  color: var(--background-color); 
 }
   
 button,
-.button { /* If you have button classes */
+.button { 
   background-color: var(--primary-color);
-  color: white; /* Or a contrasting text color */
+  color: white; 
 }
   
 h1, h2, h3, h4, h5, h6 {
@@ -151,20 +148,20 @@ hr { /* Example for borders */
   
 body {
   background-color: var(--background-color);
-  color: #333; /* Default text color on the background */
+  color: #333; 
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif; /* Apply Playfair Display to headings */
-  font-style: normal; /* Override any potential italic */
-  font-weight: bold; /* As per your description */
+  font-family: 'Playfair Display', serif; 
+  font-style: normal; 
+  font-weight: bold; 
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Assuming you meant Roboto for body */
-  font-style: italic; /* Apply italic to the body text */
-  font-weight: normal; /* Or the desired weight */
+  font-family: 'Roboto', sans-serif; 
+  font-style: italic; 
+  font-weight: normal; 
 }
 
 /* Specific element adjustments if needed */
@@ -197,89 +194,89 @@ footer{
 }
 #contenedor-reservas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ejemplo */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 20px;
   padding: 10px;
 }
 /* Estilos para cada tarjeta de reserva */
 .tarjeta-reserva {
-  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
-  border: 1px solid #ddd; /* Borde sutil */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   padding: 15px;
   display: flex;
-  flex-direction: column; /* Organiza los elementos verticalmente */
-  align-items: center; /* Centra los elementos horizontalmente */
-  text-align: center; /* Alinea el texto al centro */
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
   width: 350px;
 }
 
 /* Estilos para la imagen de la tarjeta */
 .tarjeta-reserva img {
-  width: 30%; /* La imagen ocupa todo el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 6px; /* Bordes redondeados para la imagen */
-  margin-bottom: 10px; /* Espacio debajo de la imagen */
+  width: 30%;
+  height: auto; 
+  border-radius: 6px;
+  margin-bottom: 10px; 
  
-  max-height: 200px; /* Altura máxima de la imagen */
+  max-height: 200px;
 }
 
 /* Estilos para el título de la tarjeta */
 .tarjeta-reserva h3 {
-  font-size: 1.5em; /* Tamaño del título */
-  margin-top: 0; /* Elimina el margen superior predeterminado */
-  margin-bottom: 8px; /* Espacio debajo del título */
-  color: var(--accent-color); /* Usa el color acento definido en :root */
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 8px; 
+  color: var(--accent-color); 
 }
 
 /* Estilos para la descripción de la tarjeta */
 .tarjeta-reserva p {
-  font-size: 1em; /* Tamaño de la descripción */
-  line-height: 1.4; /* Espaciado entre líneas para mejor legibilidad */
-  margin-bottom: 12px; /* Espacio debajo de la descripción */
-  color: #555; /* Color del texto de la descripción */
+  font-size: 1em; 
+  line-height: 1.4; 
+  margin-bottom: 12px; 
+  color: #555; 
 }
 
 
 /* Estilos para el botón de reserva */
 .tarjeta-reserva .boton-reserva {
-  display: inline-block; /* Para poder definir padding y otros estilos de bloque */
-  background-color: #f05614; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-  border-radius: 5px; /* Bordes redondeados del botón */
-  font-weight: bold; /* Texto del botón en negrita */
-  transition: background-color 0.3s ease; /* Transición suave para  hover */
+  display: inline-block; 
+  background-color: #f05614; 
+  color: white; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
 }
 
 /* Estilos para el botón de reserva en hover */
 .tarjeta-reserva .boton-reserva:hover {
-  background-color: #f05614; /* Oscurece el botón al pasar el mouse */
+  background-color: #f05614; 
 }
 
 /* Estilos para la sección de reservas (contenedor del título y las tarjetas) */
 #seccion-reservas {
-  padding: 30px 0; /* Espacio superior e inferior de la sección */
-  text-align: center; /* Centra el título de la sección */
+  padding: 30px 0; 
+  text-align: center; 
 }
 
 #seccion-reservas h2 {
-  font-size: 2em; /* Tamaño del título de la sección */
-  color: var(--accent-color); /* Usa el color acento */
-  margin-bottom: 20px; /* Espacio debajo del título de la sección */
+  font-size: 2em; 
+  color: var(--accent-color); 
+  margin-bottom: 20px; 
 }
 /* Estilos para el contenedor principal del menú */
 #menu-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas flexibles */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 20px;
   padding: 20px;
 }
 .plato img:hover {
-  transform: scale(1.45); /* Ligeramente más grande al hacer hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transform: scale(1.45); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -317,7 +314,7 @@ footer{
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 5px;
-  color: var(--accent-color); /* Usando una variable CSS */
+  color: var(--accent-color); 
 }
 
 /* Estilos para la descripción del plato */
@@ -339,7 +336,7 @@ footer{
 /* Estilos para la popularidad del plato */
 .plato-info .popularidad {
   font-size: 1em;
-  color: var(--primary-color); /* Usando otra variable CSS */
+  color: var(--primary-color); 
   font-weight: bold;
 }
 
@@ -355,14 +352,13 @@ footer{
   margin-bottom: 20px;
 }
 
-/* Estilos para pantallas más pequeñas (ejemplo de responsive design) */
 @media (max-width: 600px) {
   #menu-container {
-    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    grid-template-columns: 1fr; 
   }
 
   .plato {
-    flex-direction: column; /* Asegura que los elementos internos se apilen bien */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -380,7 +376,7 @@ footer{
 main {
     display: flex;
    
-    align-items: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; 
     padding: 20px;
 }
 
@@ -394,15 +390,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    width: 80%; /* Limita el ancho de las tarjetas (ajusta según necesites) */
-    max-width: 600px; /* Establece un ancho máximo para pantallas más grandes */
+    width: 80%; 
+    max-width: 600px; 
 }
 
 #romantic-dinner h2,
 #Family-Dinner h2,
 #event-request h2 {
     font-family: 'Playfair Display', serif;
-    color: #a0522d; /* Marrón tierra */
+    color: #a0522d; 
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -464,7 +460,7 @@ form#form-event textarea {
 form#form-romantic-dinner button[type="submit"],
 form#form-family button[type="submit"],
 form#form-event button[type="submit"] {
-    background-color: #cc5500; /* Naranja quemado */
+    background-color: #cc5500; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -480,10 +476,10 @@ form#form-event button[type="submit"] {
 form#form-romantic-dinner button[type="submit"]:hover,
 form#form-family button[type="submit"]:hover,
 form#form-event button[type="submit"]:hover {
-    background-color: #a0522d; /* Marrón tierra más oscuro */
+    background-color: #a0522d; 
 }
 
-/* Estilos específicos para el formulario familiar (cantidad de personas) */
+
 form#form-family div#quantity-adults,
 form#form-family div#number-of-children {
     display: inline-block;
@@ -496,7 +492,7 @@ form#form-family div#number-of-children:last-child {
     margin-right: 0;
 }
 
-/* Estilos específicos para el formulario de eventos (tipo de evento, asistentes) */
+
 form#form-event div#type-event,
 form#form-event div#number-attendees {
     display: inline-block;
@@ -509,18 +505,16 @@ form#form-event div#number-attendees:last-child {
     margin-right: 0;
 }
 
-/* Ajuste para textarea de requerimientos de eventos */
+
 form#form-event div#event-requirements textarea {
     width: calc(100% - 12px);
 }
-
-/* Media queries para hacerlo responsive (ejemplos) */
 @media (max-width: 768px) {
     #romantic-dinner,
     #Family Dinner,
     #event-request {
-        width: 95%; /* Ajusta el ancho en pantallas más pequeñas */
-        max-width: none; /* Elimina el ancho máximo */
+        width: 95%; 
+        max-width: none; 
     }
 
     form#form-family div#quantity-adults,
@@ -534,20 +528,19 @@ form#form-event div#event-requirements textarea {
 #romantic-dinner,
 #Family-Dinner,
 #event-request {
-  /* Ejemplo de ancho fijo */
+ 
   margin-left: auto;
   margin-right: auto;
-  /* Otros estilos de tus formularios */
-  padding: 20px; /* Añade un poco de espacio interno */
-  border: 1px solid #ccc; /* Ejemplo de borde */
-  border-radius: 5px; /* Ejemplo de esquinas redondeadas */
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
 }
 .reserve-background{
   background-image: url('https://raw.githubusercontent.com/sergiovaras/wdd231/refs/heads/main/la_casona/image1/logocasona.webp'); /* Ruta a tu logo */
   background-repeat: repeat;
-  background-size: auto 100px; /* Ejemplo: Ancho automático, altura de 100px */
-  background-position: center top; /* Ejemplo: Comienza desde el centro superior */
-  /* Otros estilos para tu body */
+  background-size: auto 100px; 
+  background-position: center top; 
+  
 }
 /*history*/
 main.history-container {
@@ -636,83 +629,78 @@ section.history-section h2 {
 }
 footer {
   background-color: #A0522D;
-  color: #f4f4f4; 
-  padding: 30px 500px; 
-  text-align: center; 
+  color: #f4f4f4;
+  padding: 15px 10px; 
   font-size: 0.9em;
-}
-
-footer section {
-  display: flex;
-  justify-content: center; /* Center items horizontally within the section */
-  align-items: center; /* Center items vertically within the section */
-  margin-bottom: 20px; /* Space between the logo section and social icons */
-}
-
-footer .logo1 {
-  margin-right: 20px; /* Space between the logo and other potential elements in the section */
-}
-
-footer .logo1 img {
-  display: block; /* Prevent extra space below the image */
-  width: 100px;
-  height: auto; /* Maintain aspect ratio */
-}
-
-footer > div { /* Style the social icons container directly within the footer */
-  display: flex;
-  justify-content: center; /* Center the social icons */
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-footer > div a {
-  margin: 0 10px; /* Space between social icons */
-  text-decoration: none; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
   
 }
 
-footer > div a img {
-  width: 32px;
-  height: auto; /* Maintain aspect ratio */
-  opacity: 0.8; /* Slightly reduce opacity */
-  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+footer .social-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  margin-bottom: 10px; 
 }
 
-footer > div a img:hover {
-  opacity: 1; /* Fully opaque on hover */
+footer .social-icons {
+  display: flex;
+  align-items: center;
 }
 
-footer p {
-  margin-bottom: 10px; /* Space between paragraphs */
+footer .social-icons a {
+  margin-right: 30px;
+  text-decoration: none;
 }
 
-footer p a {
-  color: #d8b384; /* A lighter brown for links */
-  text-decoration: underline; /* Add underline for links */
-  transition: color 0.3s ease;
+footer .social-icons a:last-child {
+  margin-right: 0;
 }
 
-footer p a:hover {
-  color: #f4f4f4; /* Light color on hover */
+footer .social-icons img {
+  width: auto;
+  height: 42px; 
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer .social-icons img:hover {
+  opacity: 1;
+}
+
+footer .logo-qr {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo1 img {
+  width: 100px; 
+  height: auto;
+  margin-right: 90px;
 }
 
 footer img[alt="Qr information"] {
-  display: block; /* Ensure the QR code is on its own line */
-  width: 100px; /* Adjust size as needed */
-  height: auto;
-  margin: 20px auto 0; /* Center the QR code and add top margin */
+  width: 100px; 
+  height: 120px;
 }
 
-/* Media query for smaller screens to adjust layout if needed */
-@media (max-width: 600px) {
-  footer section {
-      flex-direction: column; /* Stack logo and potential other elements on smaller screens */
-      align-items: center;
-  }
+footer .contact-info p {
+  margin-bottom: 5px;
+}
 
-  footer .logo1 {
-      margin-right: 0;
-      margin-bottom: 10px;
-  }
+footer .contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+footer .contact-info a {
+  color: #d8b384;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer .contact-info a:hover {
+  color: #f4f4f4;
 }
